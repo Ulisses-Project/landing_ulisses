@@ -5,7 +5,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, User } from "lucide-react";
+import { Mail, Linkedin, User } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 interface ContactModalProps {
@@ -21,19 +21,22 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
       name: "Dr. Pablo Valderrábano",
       role: "Endocrinologist & Co-founder",
       email: "pablo.valderrabano@salud.madrid.org",
-      // phone: "+34 912 345 678",
+      linkedin_name: "pablo-valderrabano",
+      linkedin: "pablovalderrabano",
     },
     {
       name: "Alejandro García",
       role: "Software Engineer & Co-founder",
       email: "alejandro.garcia.gallego@salud.madrid.org",
-      phone: "+34 622 698 535",
+      linkedin: "alejandrogarciagallegolinkedn",
+      linkedin_name: "alejandro-garcia",
     },
     {
       name: "Paula Quintana",
       role: "Biomedical Engineer & Co-founder",
       email: "pquintanaz@salud.madrid.org",
-      phone: "+34 674 845 178",
+      linkedin_name: "paula-quintana",
+      linkedin: "paula-quintana-zapata",
     },
   ];
 
@@ -80,11 +83,11 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                     </a>
 
                     <a
-                      href={`tel:${member.phone}`}
+                      href={`https://linkedin.com/in/${member.linkedin}`}
                       className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      <Phone className="w-4 h-4" />
-                      <span>{member.phone}</span>
+                      <Linkedin className="w-4 h-4" />
+                      <span>{member.linkedin_name}</span>
                     </a>
                   </div>
                 </div>
