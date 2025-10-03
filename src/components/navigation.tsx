@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -35,8 +35,8 @@ export function Navigation() {
               <img
                 src={
                   theme === "dark"
-                    ? "/src/assets/ULISSES_dark.png"
-                    : "/src/assets/ULISSES.png"
+                    ? "/assets/ULISSES_dark.png"
+                    : "/assets/ULISSES.png"
                 }
                 alt="UlissesDS"
                 className="h-15"

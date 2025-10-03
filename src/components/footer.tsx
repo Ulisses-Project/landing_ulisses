@@ -14,8 +14,8 @@ export function Footer() {
               <img
                 src={
                   theme === "dark"
-                    ? "/src/assets/ULISSES_dark.png"
-                    : "/src/assets/ULISSES.png"
+                    ? "/assets/ULISSES_dark.png"
+                    : "/assets/ULISSES.png"
                 }
                 alt="UlissesDS"
                 className="h-25" // Ajusta tamaño si quieres
