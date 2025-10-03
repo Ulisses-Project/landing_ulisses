@@ -18,7 +18,7 @@ export function Footer() {
                     : "/assets/ULISSES.png"
                 }
                 alt="UlissesDS"
-                className="h-25" // Ajusta tamaño si quieres
+                className="h-16 sm:h-18 md:h-20 lg:h-25"
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
@@ -126,7 +126,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} EcoAnalytics. Todos los derechos
+            &copy; {new Date().getFullYear()} UlissesDS. Todos los derechos
             reservados.
           </p>
         </div>

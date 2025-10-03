@@ -39,7 +39,7 @@ export function Navigation() {
                     : "/assets/ULISSES.png"
                 }
                 alt="UlissesDS"
-                className="h-15"
+                className="h-10 sm:h-12 md:h-14 lg:h-16"
               />
             </Link>
 
