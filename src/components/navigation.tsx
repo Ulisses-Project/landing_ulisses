@@ -35,8 +35,8 @@ export function Navigation() {
               <img
                 src={
                   theme === "dark"
-                    ? "/assets/ULISSES_dark.png"
-                    : "/assets/ULISSES.png"
+                    ? "/assets/ulisses_dark.svg"
+                    : "/assets/ulisses.svg"
                 }
                 alt="UlissesDS"
                 className="h-10 sm:h-12 md:h-14 lg:h-16"
