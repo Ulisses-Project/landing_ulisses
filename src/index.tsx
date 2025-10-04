@@ -10,7 +10,7 @@ import AppRouter from "./routes/router";
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement!);
 
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 root.render(
   <React.StrictMode>
