@@ -10,11 +10,14 @@ import AppRouter from "./routes/router";
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement!);
 
+import { Analytics } from "@vercel/analytics/next";
+
 root.render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="dark">
       <I18nProvider>
         <AppRouter />
+        <Analytics />
       </I18nProvider>
     </ThemeProvider>
   </React.StrictMode>
