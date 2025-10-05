@@ -8,20 +8,21 @@ export const CTA = () => {
   const [contactModalOpen, setContactModalOpen] = useState(false);
   return (
     <>
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-primary">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-balance text-foreground">
-            {t("features.cta.title")}
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-balance text-primary-foreground">
+            {t("cta.title")}
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 text-pretty leading-relaxed">
-            {t("features.cta.subtitle")}
+          <p className="text-lg mb-8 text-primary-foreground/90 text-pretty leading-relaxed">
+            {t("cta.subtitle")}
           </p>
           <Button
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 glow-accent"
+            variant="secondary"
+            className="bg-background text-foreground hover:bg-background/90"
             onClick={() => setContactModalOpen(true)}
           >
-            {t("features.cta.button")}
+            {t("cta.button")}
           </Button>
         </div>
       </section>

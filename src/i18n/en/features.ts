@@ -70,12 +70,7 @@ const features = {
       description: "Temporal tracking of patients and case evolution.",
     },
   },
-  cta: {
-    title: "Experience the power of UlissesDS",
-    subtitle:
-      "Request a personalized demonstration and discover how we can improve your practice",
-    button: "Request Free Demo",
-  },
+
 };
 
 export default features;

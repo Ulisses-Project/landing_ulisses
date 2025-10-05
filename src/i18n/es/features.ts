@@ -67,11 +67,7 @@ const features = {
       description: "Seguimiento temporal de pacientes y evolución de casos",
     },
   },
-  cta: {
-    title: "Únete a la revolución del diagnóstico médico",
-    subtitle: "Descubre cómo podemos mejorar tu práctica médica",
-    button: "Solicitar Demo Gratuita",
-  },
+  
 };
 
 export default features;
