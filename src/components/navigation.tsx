@@ -4,11 +4,13 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
-import { useI18n } from "@/lib/i18n";
+
 import { ContactModal } from "@/components/contact-modal";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useTheme } from "./theme-provider";
+import { useI18n } from "@/lib/i18n";
+
 
 export function Navigation() {
   const location = useLocation();
@@ -115,13 +117,6 @@ export function Navigation() {
                   </Link>
                 ))}
                 <div className="flex flex-col gap-2 pt-2">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="w-full text-muted-foreground"
-                  >
-                    {t("nav.login")}
-                  </Button>
                   <Button
                     size="sm"
                     className="w-full bg-primary text-primary-foreground hover:bg-primary/90"

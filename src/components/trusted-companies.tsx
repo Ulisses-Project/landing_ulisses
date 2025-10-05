@@ -1,15 +1,8 @@
-
+import companies from "@/assets/companies";
 import { useI18n } from "@/lib/i18n";
 
 export function TrustedCompanies() {
   const { t } = useI18n();
-
-  const companies = [
-    { name: "Hospital General", logo: "/hospital-logo.png" },
-    { name: "MediCare", logo: "/medical-clinic-logo.png" },
-    { name: "HealthTech", logo: "/health-technology-logo.jpg" },
-    { name: "Clínica Central", logo: "/clinic-logo.jpg" },
-  ];
 
   return (
     <section className="py-20 relative border-y border-border">

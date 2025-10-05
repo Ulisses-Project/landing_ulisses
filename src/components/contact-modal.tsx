@@ -18,28 +18,27 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
 
   const team = [
     {
-      name: "Dr. Pablo Valderrábano",
-      role: "Endocrinologist & Co-founder",
+      name: "Dr. Pablo Valderrabano",
+      role: t("contact.pablo_role"),
       email: "pablo.valderrabano@salud.madrid.org",
       linkedin_name: "pablo-valderrabano",
       linkedin: "pablovalderrabano",
     },
     {
-      name: "Alejandro García",
-      role: "Software Engineer & Co-founder",
+      name: "Alejandro Garcia",
+      role: t("contact.alejandro_role"),
       email: "alejandro.garcia.gallego@salud.madrid.org",
       linkedin: "alejandrogarciagallegolinkedn",
       linkedin_name: "alejandro-garcia",
     },
     {
       name: "Paula Quintana",
-      role: "Biomedical Engineer & Co-founder",
+      role: t("contact.paula_role"),
       email: "pquintanaz@salud.madrid.org",
       linkedin_name: "paula-quintana",
       linkedin: "paula-quintana-zapata",
     },
   ];
-
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="w-full max-w-md sm:max-w-2xl bg-card border-border">

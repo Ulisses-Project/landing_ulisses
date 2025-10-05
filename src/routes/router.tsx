@@ -1,9 +1,9 @@
-import NotFoundPage from "@/404/page";
-import CaracteristicasPage from "@/caracteristicas/page";
-import UnderConstructionPage from "@/construcion/page";
-import NosotrosPage from "@/nosotros/page";
+import NotFoundPage from "@/pages/404/page";
+import CaracteristicasPage from "@/pages/caracteristicas/page";
+import UnderConstructionPage from "@/pages/construcion/page";
+import NosotrosPage from "@/pages/nosotros/page";
 import HomePage from "@/page";
-import ResultadosPage from "@/resultados/page";
+import ResultadosPage from "@/pages/resultados/page";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function AppRouter() {
@@ -12,10 +12,9 @@ export default function AppRouter() {
       <Routes>
         <Route path="/" element={<UnderConstructionPage />} />
         <Route path="/home" element={<HomePage />} />
-        <Route path="/nosotros" element={<NosotrosPage />} />
-        <Route path="/caracteristicas" element={<CaracteristicasPage />} />
-        <Route path="/resultados" element={<ResultadosPage />} />
-        {/* Puedes agregar rutas 404 o redirecciones aquí */}
+        <Route path="/about" element={<NosotrosPage />} />
+        <Route path="/features" element={<CaracteristicasPage />} />
+        <Route path="/results" element={<ResultadosPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

@@ -1,9 +1,11 @@
 import { Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTheme } from "./theme-provider";
+import { useI18n } from "@/lib/i18n";
 
 export function Footer() {
   const { theme } = useTheme();
+  const { t } = useI18n();
 
   return (
     <footer className="bg-muted border-t border-border">
@@ -22,20 +24,21 @@ export function Footer() {
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Tecnología avanzada de IA para el análisis preciso de imágenes
-              ecográficas médicas.
+              {t("footer.tagline")}
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4 text-foreground">Producto</h3>
+            <h3 className="font-semibold mb-4 text-foreground">
+              {t("footer.heading.product")}
+            </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   to="/"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Características
+                  {t("footer.product.features")}
                 </Link>
               </li>
               <li>
@@ -43,7 +46,7 @@ export function Footer() {
                   to="/"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Resultados
+                  {t("footer.product.results")}
                 </Link>
               </li>
               <li>
@@ -51,7 +54,7 @@ export function Footer() {
                   to="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Precios
+                  {t("footer.product.pricing")}
                 </Link>
               </li>
               <li>
@@ -59,21 +62,23 @@ export function Footer() {
                   to="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Documentación
+                  {t("footer.product.faq")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4 text-foreground">Empresa</h3>
+            <h3 className="font-semibold mb-4 text-foreground">
+              {t("footer.heading.company")}
+            </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   to="/"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Sobre Nosotros
+                  {t("footer.company.about")}
                 </Link>
               </li>
               <li>
@@ -81,7 +86,7 @@ export function Footer() {
                   to="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Equipo
+                  {t("footer.company.team")}
                 </Link>
               </li>
               <li>
@@ -89,7 +94,7 @@ export function Footer() {
                   to="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Inversores
+                  {t("footer.company.investors")}
                 </Link>
               </li>
               <li>
@@ -97,14 +102,16 @@ export function Footer() {
                   to="#"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Contacto
+                  {t("footer.company.contact")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4 text-foreground">Contacto</h3>
+            <h3 className="font-semibold mb-4 text-foreground">
+              {t("footer.heading.contact")}
+            </h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
@@ -112,13 +119,11 @@ export function Footer() {
                   pablo.valderrabano@salud.madrid.org
                 </span>
               </li>
-              {/* <li className="flex items-start gap-2">
-                <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                <span className="text-muted-foreground">+34 655 248 595 </span>
-              </li> */}
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                <span className="text-muted-foreground">Madrid, España</span>
+                <span className="text-muted-foreground">
+                  {t("footer.address")}
+                </span>
               </li>
             </ul>
           </div>
@@ -126,8 +131,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} UlissesDS. Todos los derechos
-            reservados.
+            &copy; {new Date().getFullYear()} UlissesDS. {t("footer.rights")}
           </p>
         </div>
       </div>
