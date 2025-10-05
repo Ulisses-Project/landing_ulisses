@@ -6,7 +6,7 @@ import { AboutValues } from "./AboutValues";
 import { AboutStory } from "./AboutStory";
 import { AboutTeam } from "./AboutTeam";
 import { AboutInvestors } from "./AboutInvestors";
-import { CTA } from "@/components/Cta";
+import { CTA } from "@/components/CTA";
 
 export default function NosotrosPage() {
   return (

@@ -4,7 +4,7 @@ import { Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { MainFeatures } from "./MainFeatures";
 import { AdditionalFeatures } from "./AdditionalFeatures";
-import { CTA } from "@/components/Cta";
+import { CTA } from "@/components/CTA";
 
 const CaracteristicasPage = () => {
   const { t } = useI18n();

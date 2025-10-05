@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { KeyMetrics } from "./KeyMetrics";
-import { CTA } from "@/components/Cta";
+import { CTA } from "@/components/CTA";
 import { ResultsHero } from "./ResultsHero";
 
 const ResultadosPage = () => {
