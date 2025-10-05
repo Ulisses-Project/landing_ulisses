@@ -1,3 +1,4 @@
+import about from "./about";
 import construction from "./construction";
 import contact from "./contact";
 import features from "./features";
@@ -14,6 +15,7 @@ const en = {
   notFound,
   features,
   results,
+  about,
   trusted: {
     title: "Companies that trust us",
   },
