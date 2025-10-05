@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useTheme } from "./theme-provider";
 import { useI18n } from "@/lib/i18n";
 
+import { ulissesLogo, ulissesLogoDark } from "@/assets/logos";
+
 export function Footer() {
   const { theme } = useTheme();
   const { t } = useI18n();
@@ -14,11 +16,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img
-                src={
-                  theme === "dark"
-                    ? "/assets/ulisses_dark.svg"
-                    : "/assets/ulisses.svg"
-                }
+                src={theme === "dark" ? ulissesLogoDark : ulissesLogo}
                 alt="UlissesDS"
                 className="h-16 sm:h-18 md:h-20 lg:h-25"
               />

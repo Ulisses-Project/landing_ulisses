@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useTheme } from "./theme-provider";
 import { useI18n } from "@/lib/i18n";
-
+import { ulissesLogo, ulissesLogoDark } from "@/assets/logos";
 
 export function Navigation() {
   const location = useLocation();
@@ -35,11 +35,7 @@ export function Navigation() {
           <div className="flex items-center justify-between h-16 lg:h-20">
             <Link to="/" className="flex items-center gap-2 group">
               <img
-                src={
-                  theme === "dark"
-                    ? "/assets/ulisses_dark.svg"
-                    : "/assets/ulisses.svg"
-                }
+                src={theme === "dark" ? ulissesLogoDark : ulissesLogo}
                 alt="UlissesDS"
                 className="h-10 sm:h-12 md:h-14 lg:h-16"
               />

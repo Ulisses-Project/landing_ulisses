@@ -1,5 +1,5 @@
-import ulissesLogo from "/assests/logos/ulisses.png";
-import ulissesLogoDark from "/assests/logos/ulisses_dark.png";
-import ulissesFavicon from "/assests/logos/ulisses_favicon.png";
+import ulissesLogo from "/assets/logos/ulisses.svg";
+import ulissesLogoDark from "/assets/logos/ulisses_dark.svg";
+import ulissesFavicon from "/assets/logos/ulisses_favicon.svg";
 
 export { ulissesLogo, ulissesLogoDark, ulissesFavicon };
