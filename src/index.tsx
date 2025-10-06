@@ -11,6 +11,7 @@ const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement!);
 
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 root.render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ root.render(
       <I18nProvider>
         <AppRouter />
         <Analytics />
+        <SpeedInsights />
       </I18nProvider>
     </ThemeProvider>
   </React.StrictMode>
