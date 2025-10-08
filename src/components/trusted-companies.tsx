@@ -1,8 +1,17 @@
+import Marquee from "react-fast-marquee";
 import companies from "@/assets/companies";
 import { useI18n } from "@/lib/i18n";
+import { Link } from "react-router-dom";
+import { useTheme } from "./theme-provider";
 
 export function TrustedCompanies() {
   const { t } = useI18n();
+
+  const theme = useTheme();
+
+  const isDark = theme.theme === "dark";
+  // Duplicamos el array para tener más contenido visible
+  const extendedCompanies = [...companies, ...companies, ...companies];
 
   return (
     <section className="py-20 relative border-y border-border">
@@ -10,39 +19,36 @@ export function TrustedCompanies() {
         <h3 className="text-center text-sm font-medium text-muted-foreground mb-12">
           {t("trusted.title")}
         </h3>
-
-        <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-            {companies.map((company, i) => (
-              <li
-                key={i}
-                className="flex-shrink-0 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all"
-              >
-                <img
-                  src={company.logo || "/placeholder.svg"}
-                  alt={company.name}
-                  className="h-24 w-auto object-contain"
-                />
-              </li>
-            ))}
-          </ul>
-          <ul
-            className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-            aria-hidden="true"
+        <div className="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_48px,_black_calc(100%-48px),transparent_100%)]">
+          <Marquee
+            pauseOnHover={false}
+            gradient={false}
+            speed={50}
+            style={{ minHeight: "6rem" }}
           >
-            {companies.map((company, i) => (
-              <li
+            {extendedCompanies.map((company, i) => (
+              <span
                 key={i}
-                className="flex-shrink-0 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all"
+                className="mx-8 flex-shrink-0 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all overflow-hidden"
               >
-                <img
-                  src={company.logo || "/placeholder.svg"}
-                  alt={company.name}
-                  className="h-24 w-auto object-contain"
-                />
-              </li>
+                <Link
+                  to={company.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={
+                      isDark && company.hasOwnProperty("logo_dark")
+                        ? company.logo_dark
+                        : company.logo || "/placeholder.svg"
+                    }
+                    alt={company.name}
+                    className="h-24 w-auto object-contain transition-all duration-500 scale-100 hover:scale-105"
+                  />
+                </Link>
+              </span>
             ))}
-          </ul>
+          </Marquee>
         </div>
       </div>
     </section>

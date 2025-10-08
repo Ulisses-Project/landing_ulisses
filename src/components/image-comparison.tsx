@@ -1,10 +1,13 @@
-import { useState, useRef, useEffect } from "react";
-
 interface ImageComparisonProps {
   beforeImage: string;
   afterImage: string;
   beforeLabel?: string;
   afterLabel?: string;
+  sliderPosition: number;
+  containerRef: (element: HTMLDivElement | null) => void;
+  onMouseDown: () => void;
+  isFirst?: boolean;
+  isLast?: boolean;
 }
 
 export function ImageComparison({
@@ -12,63 +15,34 @@ export function ImageComparison({
   afterImage,
   beforeLabel = "Antes",
   afterLabel = "Después",
+  sliderPosition,
+  containerRef,
+  onMouseDown,
+  isFirst = false,
+  isLast = false,
 }: ImageComparisonProps) {
-  const [sliderPosition, setSliderPosition] = useState(50);
-  const [isDragging, setIsDragging] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const handleMove = (clientX: number) => {
-    if (!containerRef.current) return;
-
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = clientX - rect.left;
-    const percentage = (x / rect.width) * 100;
-
-    setSliderPosition(Math.min(Math.max(percentage, 0), 100));
+  const getRoundedClass = () => {
+    if (isFirst && isLast) return "rounded-xl"; // Solo un elemento
+    if (isFirst) return "rounded-t-xl"; // Primer elemento: solo redondear arriba
+    if (isLast) return "rounded-b-xl"; // Último elemento: solo redondear abajo
+    return ""; // Elementos del medio: sin redondeo
   };
-
-  const handleMouseDown = () => setIsDragging(true);
-  const handleMouseUp = () => setIsDragging(false);
-
-  const handleMouseMove = (e: MouseEvent) => {
-    if (!isDragging) return;
-    handleMove(e.clientX);
-  };
-
-  const handleTouchMove = (e: TouchEvent) => {
-    if (!isDragging) return;
-    handleMove(e.touches[0].clientX);
-  };
-
-  useEffect(() => {
-    if (isDragging) {
-      document.addEventListener("mousemove", handleMouseMove);
-      document.addEventListener("mouseup", handleMouseUp);
-      document.addEventListener("touchmove", handleTouchMove);
-      document.addEventListener("touchend", handleMouseUp);
-    }
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseup", handleMouseUp);
-      document.removeEventListener("touchmove", handleTouchMove);
-      document.removeEventListener("touchend", handleMouseUp);
-    };
-  }, [isDragging]);
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-video overflow-hidden rounded-xl border border-primary/20 select-none cursor-ew-resize"
-      onMouseDown={handleMouseDown}
-      onTouchStart={handleMouseDown}
+      className={`relative w-full aspect-video overflow-hidden border-x border-primary/20 select-none cursor-ew-resize bg-black ${
+        !isFirst ? "border-b" : ""
+      } ${!isLast ? "border-t" : ""} ${getRoundedClass()}`}
+      onMouseDown={onMouseDown}
+      onTouchStart={onMouseDown}
     >
       {/* After image (full width) */}
       <div className="absolute inset-0">
         <img
           src={afterImage || "/placeholder.svg"}
           alt={afterLabel}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
           draggable={false}
         />
         <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
@@ -84,7 +58,7 @@ export function ImageComparison({
         <img
           src={beforeImage || "/placeholder.svg"}
           alt={beforeLabel}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
           draggable={false}
         />
         <div className="absolute top-4 left-4 bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm font-medium">

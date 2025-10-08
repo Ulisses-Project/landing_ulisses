@@ -22,10 +22,15 @@ import { TrustedCompanies } from "@/components/trusted-companies";
 import { useState } from "react";
 import { ContactModal } from "@/components/contact-modal";
 import { ImageComparison } from "@/components/image-comparison";
+import { images } from "../../assets/image_comparison";
+import { appImage } from "@/assets/home";
+import { useImageComparison } from "@/hooks/useImageComparison";
 
 export default function HomePage() {
   const { t } = useI18n();
   const [contactModalOpen, setContactModalOpen] = useState(false);
+
+  const comparison = useImageComparison();
 
   return (
     <div className="min-h-screen bg-background">
@@ -77,7 +82,7 @@ export default function HomePage() {
           <div className="relative rounded-2xl overflow-hidden border border-primary/20 glow-accent">
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10"></div>
             <img
-              src="/medical-ultrasound-analysis-dashboard-interface.jpg"
+              src={appImage}
               alt="Dashboard de análisis ecográfico"
               className="w-full h-auto"
             />
@@ -126,12 +131,18 @@ export default function HomePage() {
             </p>
           </div>
 
-          <ImageComparison
-            beforeImage="/medical-ultrasound-scan-normal-quality-grayscale.jpg"
-            afterImage="/medical-ultrasound-scan-enhanced-contrast-high-qua.jpg"
-            beforeLabel="Original"
-            afterLabel="Mejorado con IA"
-          />
+          {images.map((image, i) => (
+            <ImageComparison
+              key={i}
+              beforeImage={image.before}
+              afterImage={image.after}
+              sliderPosition={comparison.sliderPosition}
+              containerRef={comparison.setRef(i)}
+              onMouseDown={() => comparison.handleMouseDown(i)}
+              isFirst={i === 0}
+              isLast={i === images.length - 1}
+            />
+          ))}
         </div>
       </section>
 

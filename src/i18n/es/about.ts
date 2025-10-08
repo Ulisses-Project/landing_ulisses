@@ -1,5 +1,5 @@
 const about = {
-  title: "Sobre UlissesDS",
+  title: "Sobre ULISSES DS",
   subtitle:
     "Pioneros en la estadarización de imagenes de ultrasonido para el diagnóstico medico por IA.",
   mission: {

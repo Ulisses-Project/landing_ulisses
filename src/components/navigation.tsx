@@ -37,7 +37,7 @@ export function Navigation() {
               <img
                 src={theme === "dark" ? ulissesLogoDark : ulissesLogo}
                 alt="UlissesDS"
-                className="h-10 sm:h-12 md:h-14 lg:h-16"
+                className="h-6 sm:h-8 md:h-10 lg:h-12"
               />
             </Link>
 

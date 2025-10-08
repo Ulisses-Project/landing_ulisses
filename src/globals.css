@@ -196,3 +196,17 @@
 .animate-infinite-scroll:hover {
   animation-play-state: paused;
 }
+
+@keyframes horizontal-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Ajusta el desplazamiento según el número de elementos e imágenes */
+    transform: translateX(-50%);
+  }
+}
+
+.animate-horizontal-scroll {
+  animation: horizontal-scroll 40s linear infinite;
+}
