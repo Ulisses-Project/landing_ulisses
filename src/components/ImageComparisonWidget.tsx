@@ -10,7 +10,7 @@ interface ImageComparisonProps {
   isLast?: boolean;
 }
 
-export function ImageComparison({
+const ImageComparisonWidget = ({
   beforeImage,
   afterImage,
   beforeLabel = "Antes",
@@ -20,7 +20,7 @@ export function ImageComparison({
   onMouseDown,
   isFirst = false,
   isLast = false,
-}: ImageComparisonProps) {
+}: ImageComparisonProps) => {
   const getRoundedClass = () => {
     if (isFirst && isLast) return "rounded-xl"; // Solo un elemento
     if (isFirst) return "rounded-t-xl"; // Primer elemento: solo redondear arriba
@@ -80,4 +80,6 @@ export function ImageComparison({
       </div>
     </div>
   );
-}
+};
+
+export default ImageComparisonWidget;

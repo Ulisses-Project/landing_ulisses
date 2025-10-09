@@ -5,6 +5,7 @@ const home = {
     titleHighlight: "Imágenes Ecográficas",
     subtitle:
       "Revolucionamos el diagnóstico médico con tecnología de inteligencia artificial avanzada. Precisión, velocidad y confiabilidad para profesionales de la salud.",
+    viewFeatures: "Explora cómo transformamos el diagnóstico",
   },
   cta: "Sé parte de Ulisses",
   comparison: {
@@ -20,7 +21,7 @@ const home = {
     subtitle:
       "Descubre el camino hacia la revolución del diagnóstico médico con IA.",
     2025: {
-      title: "Fundamentos y tracción",
+      title: "Fundamentos",
       item1:
         "Lanzamiento de marca y web con narrativa clínica e inversión clara.",
       item2:
@@ -51,6 +52,46 @@ const home = {
       item3: "Serie A para expansión de producto, ventas y datos.",
       item4:
         "Expansión internacional (incl. EE. UU. sujeta a FDA) y red de KOLs.",
+    },
+  },
+  stats: {
+    variability: "Reducción media de variabilidad por pixel",
+    rawData: "Diferencia sobre datos crudos",
+    accuracy: "AUC en diagnóstico",
+  },
+  features: {
+    title: "Características",
+    subtitle: "Tecnología que mejora cada decisión diagnóstica",
+    viewAll: "Explora todas las características",
+    1: {
+      title: "Entrenamiento eficiente",
+      description:
+        "Alcanza la precisión de modelos entrenados con millones de imágenes usando solo una fracción de los datos, reduciendo tiempo y costes de implementación.",
+    },
+    2: {
+      title: "Resultados clínicos más rápidos",
+      description:
+        "Acelera el entrenamiento y la inferencia de modelos de IA, permitiendo diagnósticos más ágiles sin comprometer la precisión.",
+    },
+    3: {
+      title: "Resultados reproducibles",
+      description:
+        "La estandarización de imágenes elimina la variabilidad entre equipos y operadores, garantizando diagnósticos consistentes en cualquier hospital.",
+    },
+    4: {
+      title: "Tecnología Órgano-Agnóstica",
+      description:
+        "Tecnología adaptable que procesa ecografías de cualquier órgano sin necesidad de reentrenar el sistema desde cero.",
+    },
+    5: {
+      title: "Validado con criterios clínicos",
+      description:
+        "Modelos entrenados con resultados citológicos y diagnósticos confirmados por especialistas, asegurando relevancia clínica directa.",
+    },
+    6: {
+      title: "Radiómica para diagnóstico",
+      description:
+        "Extrae automáticamente biomarcadores cuantitativos de las imágenes, proporcionando información objetiva adicional para el diagnóstico.",
     },
   },
 };

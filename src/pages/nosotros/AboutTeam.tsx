@@ -1,4 +1,4 @@
-import { TeamCardGrid } from "@/components/TeamCardGrid";
+import { TeamCardGrid } from "@/pages/nosotros/TeamCardGrid";
 import { useI18n } from "@/lib/i18n";
 
 export const AboutTeam = () => {
