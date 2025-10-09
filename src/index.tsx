@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { I18nProvider } from "./lib/i18n";
-import { ThemeProvider } from "./components/theme-provider";
+import { ThemeProvider } from "./context/theme-provider";
 
 import "./globals.css";
 import AppRouter from "./routes/router";
@@ -15,7 +15,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 
 root.render(
   <React.StrictMode>
-    <ThemeProvider defaultTheme="dark">
+    <ThemeProvider>
       <I18nProvider>
         <AppRouter />
         <Analytics />

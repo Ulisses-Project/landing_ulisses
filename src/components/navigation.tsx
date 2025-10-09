@@ -8,7 +8,7 @@ import { LanguageToggle } from "@/components/language-toggle";
 import { ContactModal } from "@/components/contact-modal";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { useTheme } from "./theme-provider";
+import { useTheme } from "../context/theme-provider";
 import { useI18n } from "@/lib/i18n";
 import { ulissesLogo, ulissesLogoDark } from "@/assets/logos";
 

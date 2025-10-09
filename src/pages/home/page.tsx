@@ -10,11 +10,11 @@ import {
   TrendingUp,
   Users,
   Award,
-  Sparkles,
   Rocket,
-  Globe,
-  Network,
-  Cpu,
+  Map,
+  Sprout,
+  Wrench,
+  BadgeCheck,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
@@ -32,6 +32,57 @@ export default function HomePage() {
   const [contactModalOpen, setContactModalOpen] = useState(false);
 
   const comparison = useImageComparison();
+
+  const roadmap = [
+    {
+      year: "2025",
+      quarter: "Q1-Q4",
+      icon: Sprout,
+      title: t("home.roadmap.2025.title"),
+      items: [
+        t("home.roadmap.2025.item1"),
+        t("home.roadmap.2025.item2"),
+        t("home.roadmap.2025.item3"),
+        t("home.roadmap.2025.item4"),
+      ],
+    },
+    {
+      year: "2026",
+      quarter: "Q1-Q4",
+      icon: Wrench,
+      title: t("home.roadmap.2026.title"),
+      items: [
+        t("home.roadmap.2026.item1"),
+        t("home.roadmap.2026.item2"),
+        t("home.roadmap.2026.item3"),
+        t("home.roadmap.2026.item4"),
+      ],
+    },
+    {
+      year: "2027",
+      quarter: "Q1-Q4",
+      icon: BadgeCheck,
+      title: t("home.roadmap.2027.title"),
+      items: [
+        t("home.roadmap.2027.item1"),
+        t("home.roadmap.2027.item2"),
+        t("home.roadmap.2027.item3"),
+        t("home.roadmap.2027.item4"),
+      ],
+    },
+    {
+      year: "2028",
+      quarter: "Q1-Q4",
+      icon: Rocket,
+      title: t("home.roadmap.2028.title"),
+      items: [
+        t("home.roadmap.2028.item1"),
+        t("home.roadmap.2028.item2"),
+        t("home.roadmap.2028.item3"),
+        t("home.roadmap.2028.item4"),
+      ],
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -225,14 +276,14 @@ export default function HomePage() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
-              <Rocket className="w-4 h-4" />
-              {t("roadmap.badge")}
+              <Map className="w-4 h-4" />
+              {t("home.roadmap.badge")}
             </div>
             <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-balance text-foreground">
-              {t("roadmap.title")}
+              {t("home.roadmap.title")}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              {t("roadmap.subtitle")}
+              {t("home.roadmap.subtitle")}
             </p>
           </div>
 
@@ -241,64 +292,15 @@ export default function HomePage() {
             {/* Connecting line */}
             <div className="absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/20 via-primary/50 to-primary/20"></div>
 
-            <div className="grid grid-cols-4 gap-6">
-              {[
-                {
-                  year: "2025",
-                  quarter: "Q1-Q4",
-                  icon: Rocket,
-                  title: t("roadmap.2025.title"),
-                  items: [
-                    t("roadmap.2025.item1"),
-                    t("roadmap.2025.item2"),
-                    t("roadmap.2025.item3"),
-                    t("roadmap.2025.item4"),
-                  ],
-                },
-                {
-                  year: "2026",
-                  quarter: "Q1-Q4",
-                  icon: Globe,
-                  title: t("roadmap.2026.title"),
-                  items: [
-                    t("roadmap.2026.item1"),
-                    t("roadmap.2026.item2"),
-                    t("roadmap.2026.item3"),
-                    t("roadmap.2026.item4"),
-                  ],
-                },
-                {
-                  year: "2027",
-                  quarter: "Q1-Q4",
-                  icon: Network,
-                  title: t("roadmap.2027.title"),
-                  items: [
-                    t("roadmap.2027.item1"),
-                    t("roadmap.2027.item2"),
-                    t("roadmap.2027.item3"),
-                    t("roadmap.2027.item4"),
-                  ],
-                },
-                {
-                  year: "2028",
-                  quarter: "Q1-Q4",
-                  icon: Cpu,
-                  title: t("roadmap.2028.title"),
-                  items: [
-                    t("roadmap.2028.item1"),
-                    t("roadmap.2028.item2"),
-                    t("roadmap.2028.item3"),
-                    t("roadmap.2028.item4"),
-                  ],
-                },
-              ].map((milestone, i) => (
-                <div key={i} className="relative">
+            <div className="grid grid-cols-4 gap-4 [&>*]:flex">
+              {roadmap.map((milestone, i) => (
+                <div key={i} className="relative flex">
                   {/* Timeline dot */}
                   <div className="absolute top-24 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                     <div className="w-4 h-4 rounded-full bg-primary ring-4 ring-background shadow-lg shadow-primary/50"></div>
                   </div>
 
-                  <Card className="p-6 bg-card backdrop-blur-sm border hover:border-primary/50 transition-all group mt-32">
+                  <Card className="px-4 py-6 bg-card backdrop-blur-sm border hover:border-primary/50 transition-all group mt-32 flex flex-col w-full">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                       <milestone.icon className="w-6 h-6 text-primary" />
                     </div>
@@ -310,10 +312,10 @@ export default function HomePage() {
                         {milestone.quarter}
                       </div>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-foreground">
+                    <h3 className="text-xl font-semibold mb-3 text-foreground whitespace-nowrap">
                       {milestone.title}
                     </h3>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 flex-grow">
                       {milestone.items.map((item, j) => (
                         <li
                           key={j}
@@ -340,49 +342,49 @@ export default function HomePage() {
                 {
                   year: "2025",
                   quarter: "Q1-Q4",
-                  icon: Rocket,
-                  title: t("roadmap.2025.title"),
+                  icon: Sprout,
+                  title: t("home.roadmap.2025.title"),
                   items: [
-                    t("roadmap.2025.item1"),
-                    t("roadmap.2025.item2"),
-                    t("roadmap.2025.item3"),
-                    t("roadmap.2025.item4"),
+                    t("home.roadmap.2025.item1"),
+                    t("home.roadmap.2025.item2"),
+                    t("home.roadmap.2025.item3"),
+                    t("home.roadmap.2025.item4"),
                   ],
                 },
                 {
                   year: "2026",
                   quarter: "Q1-Q4",
-                  icon: Globe,
-                  title: t("roadmap.2026.title"),
+                  icon: Wrench,
+                  title: t("home.roadmap.2026.title"),
                   items: [
-                    t("roadmap.2026.item1"),
-                    t("roadmap.2026.item2"),
-                    t("roadmap.2026.item3"),
-                    t("roadmap.2026.item4"),
+                    t("home.roadmap.2026.item1"),
+                    t("home.roadmap.2026.item2"),
+                    t("home.roadmap.2026.item3"),
+                    t("home.roadmap.2026.item4"),
                   ],
                 },
                 {
                   year: "2027",
                   quarter: "Q1-Q4",
-                  icon: Network,
-                  title: t("roadmap.2027.title"),
+                  icon: BadgeCheck,
+                  title: t("home.roadmap.2027.title"),
                   items: [
-                    t("roadmap.2027.item1"),
-                    t("roadmap.2027.item2"),
-                    t("roadmap.2027.item3"),
-                    t("roadmap.2027.item4"),
+                    t("home.roadmap.2027.item1"),
+                    t("home.roadmap.2027.item2"),
+                    t("home.roadmap.2027.item3"),
+                    t("home.roadmap.2027.item4"),
                   ],
                 },
                 {
                   year: "2028",
                   quarter: "Q1-Q4",
-                  icon: Cpu,
-                  title: t("roadmap.2028.title"),
+                  icon: Rocket,
+                  title: t("home.roadmap.2028.title"),
                   items: [
-                    t("roadmap.2028.item1"),
-                    t("roadmap.2028.item2"),
-                    t("roadmap.2028.item3"),
-                    t("roadmap.2028.item4"),
+                    t("home.roadmap.2028.item1"),
+                    t("home.roadmap.2028.item2"),
+                    t("home.roadmap.2028.item3"),
+                    t("home.roadmap.2028.item4"),
                   ],
                 },
               ].map((milestone, i) => (

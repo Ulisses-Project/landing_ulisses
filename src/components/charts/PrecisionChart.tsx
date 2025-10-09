@@ -11,7 +11,7 @@ import {
 } from "recharts";
 import { Card } from "../ui/card";
 import CustomTooltip from "./CustomTooltip";
-import { useTheme } from "../theme-provider";
+import { useTheme } from "../../context/theme-provider";
 
 const PrecisionChart = () => {
   const { t } = useI18n();

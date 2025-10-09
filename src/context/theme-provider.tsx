@@ -17,23 +17,20 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 interface ThemeProviderProps {
   children: ReactNode;
-  defaultTheme?: Theme;
 }
 
-export function ThemeProvider({
-  children,
-  defaultTheme = "light",
-}: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
+const getInitialTheme = (): Theme => {
+  const savedTheme = localStorage.getItem("theme") as Theme | "dark";
+  console.log("Theme used:", savedTheme);
+  return savedTheme;
+};
 
-  // Optional: persist theme in localStorage and set CSS class on body
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as Theme | null;
-    if (savedTheme) setTheme(savedTheme);
-  }, []);
+export function ThemeProvider({ children }: ThemeProviderProps) {
+  const [theme, setTheme] = useState<Theme>(getInitialTheme());
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
+    console.log("Theme saved:", theme);
     document.documentElement.className = theme; // set theme class on <html>
   }, [theme]);
 

@@ -10,7 +10,7 @@ import {
 import { Card } from "../ui/card";
 import CustomTooltip from "./CustomTooltip";
 import { useI18n } from "@/lib/i18n";
-import { useTheme } from "@/components/theme-provider";
+import { useTheme } from "@/context/theme-provider";
 
 const RendimientoChart = () => {
   const { t } = useI18n();

@@ -42,7 +42,7 @@ export function ImageComparison({
         <img
           src={afterImage || "/placeholder.svg"}
           alt={afterLabel}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
           draggable={false}
         />
         <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
@@ -58,7 +58,7 @@ export function ImageComparison({
         <img
           src={beforeImage || "/placeholder.svg"}
           alt={beforeLabel}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
           draggable={false}
         />
         <div className="absolute top-4 left-4 bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm font-medium">

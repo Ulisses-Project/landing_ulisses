@@ -1,6 +1,6 @@
 import { Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useTheme } from "./theme-provider";
+import { useTheme } from "../context/theme-provider";
 import { useI18n } from "@/lib/i18n";
 
 import { ulissesLogo, ulissesLogoDark } from "@/assets/logos";
