@@ -1,18 +1,5 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import {
-  ArrowRight,
-  Brain,
-  Shield,
-  Zap,
-  TrendingUp,
-  Users,
-  Award,
-} from "lucide-react";
-import { Link } from "react-router-dom";
-import { useI18n } from "@/lib/i18n";
 import { TrustedCompanies } from "@/components/trusted-companies";
 import { useState } from "react";
 import { ContactModal } from "@/components/contact-modal";

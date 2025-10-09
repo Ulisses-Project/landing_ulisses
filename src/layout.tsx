@@ -16,7 +16,7 @@ export default function RootLayout({
       <body
         className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}
       >
-        <ThemeProvider defaultTheme="dark">
+        <ThemeProvider>
           <I18nProvider>
             <Suspense fallback={null}>{children}</Suspense>
           </I18nProvider>
