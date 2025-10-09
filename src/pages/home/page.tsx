@@ -25,6 +25,7 @@ import { ImageComparison } from "@/components/image-comparison";
 import { images } from "../../assets/image_comparison";
 import { appImage } from "@/assets/home";
 import { useImageComparison } from "@/hooks/useImageComparison";
+import { CTA } from "@/components/CTA";
 
 export default function HomePage() {
   const { t } = useI18n();
@@ -46,19 +47,19 @@ export default function HomePage() {
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse-green"></span>
-              {t("hero.badge")}
+              {t("home.hero.badge")}
             </div>
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-6 text-balance leading-tight text-foreground">
-            {t("hero.title")}
+            {t("home.hero.title")}
             <span className="block bg-gradient-to-r from-primary via-primary to-primary/80 bg-clip-text text-transparent mt-2">
-              {t("hero.titleHighlight")}
+              {t("home.hero.titleHighlight")}
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-10 text-pretty leading-relaxed">
-            {t("hero.subtitle")}
+            {t("home.hero.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -67,7 +68,7 @@ export default function HomePage() {
               className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 glow-accent"
               onClick={() => setContactModalOpen(true)}
             >
-              {t("nav.cta")}
+              {t("home.cta")}
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
             <Button
@@ -123,11 +124,10 @@ export default function HomePage() {
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-balance text-foreground">
-              Mejora Visual Instantánea
+              {t("home.comparison.title")}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              Compara la calidad de imagen antes y después del procesamiento con
-              IA. Desliza para ver la diferencia.
+              {t("home.comparison.subtitle")}
             </p>
           </div>
 
@@ -136,6 +136,8 @@ export default function HomePage() {
               key={i}
               beforeImage={image.before}
               afterImage={image.after}
+              beforeLabel={t("home.comparison.beforeImage")}
+              afterLabel={t("home.comparison.afterImage")}
               sliderPosition={comparison.sliderPosition}
               containerRef={comparison.setRef(i)}
               onMouseDown={() => comparison.handleMouseDown(i)}
@@ -424,39 +426,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative py-20 lg:py-32 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5"></div>
-        <div className="absolute inset-0 grid-pattern opacity-20"></div>
-        <div className="container mx-auto max-w-4xl text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
-            <Sparkles className="w-4 h-4" />
-            {t("cta.badge")}
-          </div>
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-balance text-foreground">
-            {t("cta.title")}
-          </h2>
-          <p className="text-lg mb-8 text-muted-foreground text-pretty leading-relaxed">
-            {t("cta.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 glow-accent"
-              onClick={() => setContactModalOpen(true)}
-            >
-              {t("cta.demo")}
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="w-full sm:w-auto bg-transparent"
-              onClick={() => setContactModalOpen(true)}
-            >
-              {t("cta.sales")}
-            </Button>
-          </div>
-        </div>
-      </section>
+      <CTA />
 
       <Footer />
 

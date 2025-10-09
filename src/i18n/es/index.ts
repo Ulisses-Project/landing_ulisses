@@ -1,8 +1,10 @@
 import about from "./about";
 import construction from "./construction";
 import contact from "./contact";
+import cta from "./cta";
 import features from "./features";
 import footer from "./footer";
+import home from "./home";
 import nav from "./nav";
 import notFound from "./not-found";
 import results from "./results";
@@ -16,13 +18,10 @@ const es = {
   features,
   results,
   about,
+  home,
+  cta,
   trusted: {
     title: "Empresas que confian en nosotros",
-  },
-  cta: {
-    title: "Únete a la revolución del diagnóstico médico",
-    subtitle: "Descubre cómo podemos mejorar tu práctica médica",
-    button: "Solicitar Demo Gratuita",
   },
 };
 

@@ -1,8 +1,10 @@
 import about from "./about";
 import construction from "./construction";
 import contact from "./contact";
+import cta from "./cta";
 import features from "./features";
 import footer from "./footer";
+import home from "./home";
 import nav from "./nav";
 import notFound from "./not-found";
 import results from "./results";
@@ -16,14 +18,10 @@ const en = {
   features,
   results,
   about,
+  home,
+  cta,
   trusted: {
     title: "Companies that trust us",
-  },
-  cta: {
-    title: "Experience the power of UlissesDS",
-    subtitle:
-      "Request a personalized demonstration and discover how we can improve your practice",
-    button: "Request Free Demo",
   },
 };
 
