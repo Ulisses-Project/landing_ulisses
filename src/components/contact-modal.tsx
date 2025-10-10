@@ -18,18 +18,11 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
 
   const team = [
     {
-      name: "Dr. Pablo Valderrabano",
+      name: "Dr. Pablo Valderrábano",
       role: t("contact.pablo_role"),
       email: "pablo.valderrabano@salud.madrid.org",
       linkedin_name: "pablo-valderrabano",
       linkedin: "pablovalderrabano",
-    },
-    {
-      name: "Alejandro Garcia",
-      role: t("contact.alejandro_role"),
-      email: "alejandro.garcia.gallego@salud.madrid.org",
-      linkedin: "alejandrogarciagallegolinkedn",
-      linkedin_name: "alejandro-garcia",
     },
     {
       name: "Paula Quintana",
@@ -37,6 +30,13 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
       email: "pquintanaz@salud.madrid.org",
       linkedin_name: "paula-quintana",
       linkedin: "paula-quintana-zapata",
+    },
+    {
+      name: "Alejandro García",
+      role: t("contact.alejandro_role"),
+      email: "alejandro.garcia.gallego@salud.madrid.org",
+      linkedin: "alejandrogarciagallegolinkedn",
+      linkedin_name: "alejandro-garcia",
     },
   ];
   return (

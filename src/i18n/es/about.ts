@@ -1,7 +1,7 @@
 const about = {
   title: "Sobre ULISSES DS",
   subtitle:
-    "Pioneros en la estadarización de imagenes de ultrasonido para el diagnóstico medico por IA.",
+    "Pioneros en la estadarización de imágenes de ultrasonido para el diagnóstico médico por IA",
   mission: {
     title: "Nuestra Misión",
     paragraph1:
@@ -35,60 +35,76 @@ const about = {
   story: {
     title: "Nuestra Historia",
     year1: {
-      title: "Fundación",
+      title: "Fundación y visión",
       description:
-        "Un equipo de médicos radiólogos e ingenieros en IA se unen con la visión de revolucionar el diagnóstico por imagen. Comienza el desarrollo del primer prototipo.",
+        "Un endocrino y un físico de ultrasonidos se unen con el objetivo de reducir la variabilidad en el diagnóstico de imágenes ecográficas. La idea resulta ganadora del programa HealthStart de Madri+d y se convierte en una hoja de ruta de proyecto tecnológico con enfoque clínico.",
     },
     year2: {
-      title: "Primeros Ensayos Clínicos",
+      title: "Validación inicial",
       description:
-        "Colaboración con 5 hospitales universitarios para validar la tecnología. Resultados prometedores con 96% de precisión en detección de anomalías.",
+        "Lanzamos los primeros estudios piloto para demostrar viabilidad y fiabilidad de la metodología. Accedemos a financiación competitiva pública y privada, señal de interés clínico y del mercado.",
     },
     year3: {
-      title: "Certificación Medicina",
+      title: "De la idea a la tecnología",
       description:
-        "Obtención de certificaciones CE y FDA. Lanzamiento comercial en Europa. Primeros 50 centros médicos adoptan la plataforma.",
+        "Incorporamos talento de ingeniería para transformar la metodología en una tecnología de vanguardia: arquitectura modular, seguridad y trazabilidad de datos y alineación con los flujos de trabajo clínicos.",
     },
     year4: {
-      title: "Expansión Internacional",
+      title: "Infraestructura de datos clínicos",
       description:
-        "Apertura de oficinas en América Latina y Asia. Mas de 150 instituciones médicas utilizan UlissesDS. Ronda de inversión Serie A exitosa.",
+        "Equipo multidisciplinar de clínicos e ingenieros para la adquisición y procesamiento de datos bajo protocolos estandarizados. Anotación experta y control de calidad que alimentan el entrenamiento de modelos.",
     },
     year5: {
-      title: "Liderazgo en Innovación",
+      title: "IA aplicada a ecografía",
       description:
-        "Más de 200 centros médicos en 15 países. Precisión del 98.5%. Reconocimiento como una de las 10 startups de salud más innovadoras de Europa.",
+        "Desarrollamos modelos de IA de apoyo al diagnóstico en ecografía priorizando explicabilidad y reproducibilidad. Iteramos con feedback de clínicos para maximizar la utilidad en la práctica.",
+    },
+    year6: {
+      title: "Optimización de la IA",
+      description:
+        "Optimizamos los modelos para mejorar su precisión y velocidad e iniciamos segmentación automática de ecografía, incorporando explicabilidad, trazabilidad y control de sesgo.",
     },
   },
   team: {
-    title: "Equipo de Liderazgo",
+    title: "Nuestro Equipo",
     subtitle: "Expertos en medicina, inteligencia artificial y tecnología",
     pablo: {
-      alt: "CEO",
-      role: "CEO & Co-fundador",
+      alt: "CMO",
+      role: "CMO & Co-fundador",
       description:
-        "Radiólogo con 15 años de experiencia. PhD en Imagen Médica por la Universidad Complutense.",
+        "Endocrino con 7 años de experiencia en patología tiroidea. PhD en Endocrinología por la Universidad Autónoma de Madrid.",
     },
     paula: {
-      alt: "CTO",
-      role: "CTO & Co-fundadora",
+      alt: "COO",
+      role: "COO & Co-fundadora",
       description:
-        "Ingeniera en IA. Anteriormente investigadora en Google DeepMind. PhD en Machine Learning.",
+        "Ingeniera biomédica con 2 años de experiencia en el tratamiento y procesamiento de imagénes médicas.",
     },
     alejandro: {
-      alt: "CMO",
-      role: "Chief Medical Officer",
+      alt: "CTO",
+      role: "CTO & Co-fundador",
       description:
-        "Especialista en diagnóstico por imagen. 20 años en hospitales universitarios de referencia.",
+        "Ingeniero de software con 2 años de experiencia en el desarrollo de arquitecturas de IA y aplicaciones web.",
+    },
+    david: {
+      alt: "Desarrollador de IA",
+      role: "Desarrollador de IA",
+      description:
+        "Ingeniero de la salud con 1 año de experiencia en el desarrollo de modelos de IA aplicados a imagen médica.",
+    },
+    marina: {
+      alt: "Desarrolladora de IA",
+      role: "Desarrolladora de IA",
+      description:
+        "Ingeniera biomédica con 1 año de experiencia en el desarrollo de modelos de visión por computador.",
     },
   },
   investors: {
     title: "Respaldados por Líderes",
-    subtitle:
-      "Inversores que comparten nuestra visión de transformar la medicina",
-    badge: "Serie A - €15M recaudados",
+    subtitle: "Organizaciones públicas y privadas que comparten nuestra visión",
+    badge: "650K € de financiación",
     description:
-      "Financiación destinada a expansión internacional, investigación en nuevas modalidades de imagen y desarrollo de capacidades de IA multimodal.",
+      "Financiación destinada a la investigación de tecnología que permita mejorar el diagnóstico y seguimiento de nódulos mediante imágen ecográfica.",
   },
 };
 

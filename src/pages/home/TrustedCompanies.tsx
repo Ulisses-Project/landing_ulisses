@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 import companies from "@/assets/companies";
 import { useI18n } from "@/lib/i18n";
 import { Link } from "react-router-dom";
-import { useTheme } from "../context/theme-provider";
+import { useTheme } from "../../context/theme-provider";
 
 export function TrustedCompanies() {
   const { t } = useI18n();

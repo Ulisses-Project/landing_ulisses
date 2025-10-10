@@ -1,7 +1,7 @@
 const about = {
   title: "About ULISSES DS",
   subtitle:
-    "Pioneers in the standardization of ultrasound images for medical diagnosis by AI.",
+    "Pioneers in the standardization of ultrasound images for medical diagnosis by AI",
   mission: {
     title: "Our Mission",
     paragraph1:
@@ -35,58 +35,76 @@ const about = {
   story: {
     title: "Our Story",
     year1: {
-      title: "Founding",
+      title: "Foundation and Vision",
       description:
-        "A team of medical radiologists and engineers in AI join with the vision of revolutionizing medical diagnosis. The first prototype is developed.",
+        "An endocrinologist and an ultrasound physicist join forces to reduce diagnostic variability in ultrasound imaging. The idea wins the Madri+d HealthStart program and becomes a clinically focused technology roadmap.",
     },
     year2: {
-      title: "Early Clinical Trials",
-      description: "The first prototype is tested in clinical trials.",
+      title: "Initial Validation",
+      description:
+        "We launch the first pilot studies to demonstrate the methodology´s feasibility and reliability. We secure competitive public and private funding, signaling both clinical and market interest.",
     },
     year3: {
-      title: "Medical Certification",
+      title: "From Idea to Technology",
       description:
-        "Obtaining CE and FDA certifications. Commercial launch in Europe. First 50 medical centers adopt the platform.",
+        "We bring in engineering talent to turn the methodology into cutting-edge technology: modular architecture, data security and traceability, and alignment with clinical workflows.",
     },
     year4: {
-      title: "International Expansion",
+      title: "Clinical Data Infrastructure",
       description:
-        "Opening offices in Latin America and Asia. Over 150 medical institutions use UlissesDS. Successful Series A funding round.",
+        "A multidisciplinary team of clinicians and engineers acquires and processes data under standardized protocols. Expert annotation and quality control feed model training.",
     },
     year5: {
-      title: "Innovation Leadership",
+      title: "AI for Ultrasound",
       description:
-        "Over 200 medical centers in 15 countries. 98.5% accuracy. Recognition as one of Europe's 10 most innovative health startups.",
+        "We develop AI models to support ultrasound diagnosis, prioritizing explainability and reproducibility. We iterate with clinician feedback to maximize usefulness in practice.",
+    },
+    year6: {
+      title: "AI Optimization",
+      description:
+        "We optimize models to improve accuracy and speed and initiate automatic segmentation in ultrasound, incorporating explainability, traceability, and bias control.",
     },
   },
   team: {
     title: "Our Team",
-    subtitle: "The people behind the innovation",
+    subtitle: "Experts in medicine, AI and technology",
     pablo: {
-      alt: "CEO",
-      role: "CEO & Co-founder",
+      alt: "CMO",
+      role: "CMO & Co-founder",
       description:
-        "Radiologist with 15 years of experience. PhD in Medical Imaging from Complutense University.",
+        "Endocrinologist with 7 years of experience in thyroid pathology. PhD in Endocrinology from the University of Autonoma of Madrid.",
     },
     paula: {
-      alt: "CTO",
-      role: "CTO & Co-fundadora",
+      alt: "COO",
+      role: "COO & Co-founder",
       description:
-        "Engineer in AI. Previously researcher at Google DeepMind. PhD in Machine Learning.",
+        "Biomedical engineer with 2 years of experience in the treatment and processing of medical images and applied AI.",
     },
     alejandro: {
-      alt: "CMO",
-      role: "Chief Medical Officer",
+      alt: "CTO",
+      role: "CTO & Co-founder",
       description:
-        "Specialist in diagnostic imaging. 20 years in reference university hospitals.",
+        "Software engineer with 2 years of experience in the development of AI architectures and web applications.",
+    },
+    david: {
+      alt: "AI Developer",
+      role: "AI Developer",
+      description:
+        "Health engineer with 1 year of experience in the development of AI models applied to medical images.",
+    },
+    marina: {
+      alt: "AI Developer",
+      role: "AI Developer",
+      description:
+        "Biomedical engineer with 1 year of experience in the development of computer vision models applied to medical images.",
     },
   },
   investors: {
     title: "Backed by Leaders",
-    subtitle: "Investors who share our vision of transforming medicine",
-    badge: "Series A - €15M raised",
+    subtitle: "Public and private organizations that share our vision",
+    badge: "650K € of funding",
     description:
-      "Funding allocated to international expansion, research in new imaging modalities and development of multimodal AI capabilities.",
+      "Funding dedicated to research in technology that allows us to improve the diagnostic accuracy and follow-up of nodules through ultrasound images.",
   },
 };
 

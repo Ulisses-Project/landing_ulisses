@@ -12,14 +12,14 @@ export const TeamCardGrid = () => {
   const { t } = useI18n();
   const team = [
     {
-      name: "Dr. Pablo Valderrabano",
+      name: "Dr. Pablo Valderrábano",
       role: t("about.team.pablo.role"),
       image: pabloImage,
       alt: t("about.team.pablo.alt"),
       description: t("about.team.pablo.description"),
     },
     {
-      name: "Paula Quitana",
+      name: "Paula Quintana",
       role: t("about.team.paula.role"),
       image: paulaImage,
       alt: t("about.team.paula.alt"),
@@ -34,17 +34,17 @@ export const TeamCardGrid = () => {
     },
     {
       name: "David Santamaría",
-      role: t("about.team.alejandro.role"),
+      role: t("about.team.david.role"),
       image: davidImage,
-      alt: t("about.team.alejandro.alt"),
-      description: t("about.team.alejandro.description"),
+      alt: t("about.team.david.alt"),
+      description: t("about.team.david.description"),
     },
     {
       name: "Marina de Diego",
-      role: t("about.team.alejandro.role"),
+      role: t("about.team.marina.role"),
       image: marinaImage,
-      alt: t("about.team.alejandro.alt"),
-      description: t("about.team.alejandro.description"),
+      alt: t("about.team.marina.alt"),
+      description: t("about.team.marina.description"),
     },
   ];
 

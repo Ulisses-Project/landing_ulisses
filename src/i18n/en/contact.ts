@@ -5,9 +5,9 @@ const contact = {
   email: "Email",
   phone: "Phone",
   close: "Close",
-  pablo_role: "Endocrinologist & Co-founder",
-  alejandro_role: "Software Engineer & Co-founder",
-  paula_role: "Biomedical Engineer & Co-founder",
+  pablo_role: "CMO & Co-founder",
+  alejandro_role: "CTO & Co-founder",
+  paula_role: "COO & Co-founder",
 };
 
 export default contact;

@@ -25,6 +25,16 @@ const companies = [
     logo_dark: "/assets/companies/mwc_dark.svg",
     url: "https://mobileworldcapital.com/en/the-collider/",
   },
+  {
+    name: "AECC",
+    logo: "/assets/companies/aecc.svg",
+    url: "https://www.contraelcancer.es/es",
+  },
+  {
+    name: "ISCIII",
+    logo: "/assets/companies/isciii.svg",
+    url: "https://www.isciii.es/",
+  },
 ];
 
 export default companies;

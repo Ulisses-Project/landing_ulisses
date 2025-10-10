@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import { TrustedCompanies } from "@/components/trusted-companies";
+import { TrustedCompanies } from "@/pages/home/TrustedCompanies";
 import { useState } from "react";
 import { ContactModal } from "@/components/contact-modal";
 

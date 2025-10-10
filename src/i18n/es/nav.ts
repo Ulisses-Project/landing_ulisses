@@ -4,6 +4,6 @@ const nav = {
   results: "Resultados",
   about: "Nosotros",
   login: "Iniciar Sesión",
-  cta: "Sé parte de Ulisses",
+  cta: "Sé parte de ULISSES",
 };
 export default nav;

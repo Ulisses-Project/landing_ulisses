@@ -48,7 +48,7 @@ export function Navigation() {
                   key={link.href}
                   to={link.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary relative",
+                    "text-md font-medium transition-colors hover:text-primary relative",
                     pathname === link.href
                       ? "text-primary"
                       : "text-muted-foreground"

@@ -29,6 +29,11 @@ export const AboutStory = () => {
       title: t("about.story.year5.title"),
       description: t("about.story.year5.description"),
     },
+    {
+      year: "2024",
+      title: t("about.story.year6.title"),
+      description: t("about.story.year6.description"),
+    },
   ];
 
   return (

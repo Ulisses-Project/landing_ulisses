@@ -1,3 +1,4 @@
+import { teamImage } from "@/assets/team";
 import { useI18n } from "@/lib/i18n";
 
 export const AboutMission = () => {
@@ -19,7 +20,7 @@ export const AboutMission = () => {
           </div>
           <div className="relative">
             <img
-              src="/medical-team-doctors-collaborating-with-technology.jpg"
+              src={teamImage}
               alt={t("about.mission.alt")}
               className="rounded-2xl shadow-xl"
             />

@@ -21,7 +21,7 @@ const home = {
     subtitle:
       "Descubre el camino hacia la revolución del diagnóstico médico con IA.",
     2025: {
-      title: "Fundamentos",
+      title: "Primeros pasos",
       item1:
         "Lanzamiento de marca y web con narrativa clínica e inversión clara.",
       item2:
@@ -57,6 +57,7 @@ const home = {
   stats: {
     variability: "Reducción media de variabilidad por pixel",
     rawData: "Diferencia sobre datos crudos",
+    dice: "Dice en segmentación",
     accuracy: "AUC en diagnóstico",
   },
   features: {

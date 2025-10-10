@@ -21,7 +21,7 @@ const home = {
     subtitle:
       "Discover the path to the revolution of medical diagnostics with AI.",
     2025: {
-      title: "Foundation",
+      title: "First Steps",
       item1: "Launch of the website and brand definition",
       item2:
         "Design of the automated standardization pipeline (DICOM/ultrasound)",
