@@ -1,5 +1,5 @@
 import { Navigation } from "@/components/navigation";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { AlertCircle, Home, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";

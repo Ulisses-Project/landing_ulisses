@@ -1,4 +1,5 @@
 const about = {
+  badge: "The team behind the innovation",
   title: "About ULISSES DS",
   subtitle:
     "Pioneers in the standardization of ultrasound images for medical diagnosis by AI",
@@ -72,7 +73,7 @@ const about = {
       alt: "CMO",
       role: "CMO & Co-founder",
       description:
-        "Endocrinologist with 7 years of experience in thyroid pathology. PhD in Endocrinology from the University of Autonoma of Madrid.",
+        "Endocrinologist with 18 years of experience. PhD in Endocrinology and worldwide expert in thyroid nodules and thyroid cancer.",
     },
     paula: {
       alt: "COO",
@@ -102,7 +103,7 @@ const about = {
   investors: {
     title: "Backed by Leaders",
     subtitle: "Public and private organizations that share our vision",
-    badge: "650K € of funding",
+    badge: "+1M € of funding",
     description:
       "Funding dedicated to research in technology that allows us to improve the diagnostic accuracy and follow-up of nodules through ultrasound images.",
   },

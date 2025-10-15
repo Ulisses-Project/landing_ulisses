@@ -1,5 +1,5 @@
 import { Navigation } from "@/components/navigation";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/Footer";
 import { KeyMetrics } from "./KeyMetrics";
 import { CTA } from "@/components/CTA";
 import { ResultsHero } from "./ResultsHero";

@@ -2,15 +2,12 @@ import Marquee from "react-fast-marquee";
 import companies from "@/assets/companies";
 import { useI18n } from "@/lib/i18n";
 import { Link } from "react-router-dom";
-import { useTheme } from "../../context/theme-provider";
 
 export function TrustedCompanies() {
   const { t } = useI18n();
 
-  const theme = useTheme();
+  console.log(companies);
 
-  const isDark = theme.theme === "dark";
-  // Duplicamos el array para tener más contenido visible
   const extendedCompanies = [...companies, ...companies, ...companies];
 
   return (
@@ -29,7 +26,7 @@ export function TrustedCompanies() {
             {extendedCompanies.map((company, i) => (
               <span
                 key={i}
-                className="mx-8 flex-shrink-0 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all overflow-hidden"
+                className="mx-8 flex-shrink-0 flex items-center justify-center"
               >
                 <Link
                   to={company.url}
@@ -37,13 +34,9 @@ export function TrustedCompanies() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={
-                      isDark && company.hasOwnProperty("logo_dark")
-                        ? company.logo_dark
-                        : company.logo || "/placeholder.svg"
-                    }
-                    alt={company.name}
-                    className="h-24 w-auto object-contain transition-all duration-500 scale-100 hover:scale-105"
+                    src={company.logo}
+                    alt={company.name || `Investor ${i + 1}`}
+                    className="h-20 lg:h-24 w-auto max-w-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0 dark:invert dark:hover:invert-0"
                   />
                 </Link>
               </span>

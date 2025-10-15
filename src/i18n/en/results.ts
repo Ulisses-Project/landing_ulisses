@@ -68,37 +68,38 @@ const results = {
   caseStudies: {
     title: "Case Studies",
     caseStudy1: {
-      title: "Improvement of 45% in early detection",
-      institution: "La Paz University Hospital",
+      title: "ULISSES will be essential in the future of ultrasound",
+      institution: "Hospital Universitario Ramón y Cajal",
       description:
-        '"Since implementing UlissesDS, we have observed a significant improvement in early detection of anomalies. The system has allowed us to reduce diagnosis times and increase confidence in our assessments."',
-      name: "Dr. María González",
+        '"Integrating software like ULISSES into the clinical workflow is going to be essential to address the exponential use of ultrasound imaging."',
+      name: "Dr. Javier Blazquez Sanchez",
       role: "Head of Radiology",
-      alt: "La Paz University Hospital",
+      alt: "Hospital Universitario Ramón y Cajal",
       insight1: {
-        title: "Detection improvement",
-        value: "45%",
+        title: "Annual patients",
+        value: "200%",
       },
       insight2: {
-        title: "Monthly analyses",
+        title: "Monthly ultrasound images",
         value: "3,500+",
       },
     },
     caseStudy2: {
-      title: "Reduction of 60% in analysis time",
-      institution: "Barcelona Diagnostic Clinic",
+      title:
+        "Experts in endocrinology believe it is necessary to standardize ultrasound",
+      institution: "Sociedad Española de Endocrinología y Nutrición",
       description:
-        '"The integration with our PACS system was perfect. We now process twice as many patients without compromising quality. AI helps us prioritize urgent cases automatically."',
-      name: "Dr. Carlos Martínez",
-      role: "Medical Director",
-      alt: "Barcelona Diagnostic Clinic",
+        "A 100% of attendees believe it is necessary to standardize ultrasound images to improve the accuracy of the diagnoses and avoid unnecessary biopsies.",
+      name: "Attendees of 66th SEEN Congress 2025",
+      role: "Experts in endocrinology and nutrition",
+      alt: "Congreso SEEN 2025",
       insight1: {
-        title: "Time reduction",
-        value: "60%",
+        title: "Need for standardization",
+        value: "100%",
       },
       insight2: {
-        title: "Patient capacity",
-        value: "2x",
+        title: "Consistency in the assessment of echogenicity",
+        value: "51%",
       },
     },
     caseStudy3: {

@@ -4,6 +4,7 @@ import { useTheme } from "../context/theme-provider";
 import { useI18n } from "@/lib/i18n";
 
 import { ulissesLogo, ulissesLogoDark } from "@/assets/logos";
+import { companiesSeals } from "@/assets/companies";
 
 export function Footer() {
   const { theme } = useTheme();
@@ -110,11 +111,16 @@ export function Footer() {
             <h3 className="font-semibold mb-4 text-foreground">
               {t("footer.heading.contact")}
             </h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm mb-6">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
                 <span className="text-muted-foreground">
-                  pablo.valderrabano@salud.madrid.org
+                  <a
+                    href="mailto:pablo.valderrabano@salud.madrid.org"
+                    className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    pablo.valderrabano@salud.madrid.org
+                  </a>
                 </span>
               </li>
               <li className="flex items-start gap-2">
@@ -124,6 +130,24 @@ export function Footer() {
                 </span>
               </li>
             </ul>
+
+            {/* Sellos de calidad */}
+            <div className="flex items-center gap-3 sm:gap-4">
+              {companiesSeals.map(({ name, logo, url }, index) => (
+                <Link
+                  key={index}
+                  to={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={logo}
+                    alt={name}
+                    className="h-12 sm:h-14 md:h-16 w-auto max-w-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0 dark:invert dark:hover:invert-0"
+                  />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 

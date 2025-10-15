@@ -29,12 +29,14 @@ export const CaseStudy = ({
   return (
     <Card className="overflow-hidden bg-card backdrop-blur-sm border">
       <div className="grid lg:grid-cols-2">
-        <div className="relative h-64 lg:h-auto">
-          <img
-            src={image}
-            alt={image_alt}
-            className="w-full h-full object-cover"
-          />
+        <div className="relative w-full h-96 lg:h-auto bg-gradient-to-br from-primary/10 via-primary/20 to-primary/30 dark:from-primary/20 dark:via-primary/30 dark:to-primary/40 p-8 flex items-center justify-center">
+          <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-background/30 backdrop-blur-sm ring-2 ring-primary/40">
+            <img
+              src={image}
+              alt={image_alt}
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
         <div className="p-8 lg:p-10">
           <div className="text-sm text-primary font-medium mb-2">

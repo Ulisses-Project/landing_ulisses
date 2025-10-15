@@ -1,3 +1,4 @@
+import { blazquezImage, seenImage, sellosImage } from "@/assets/case_studies";
 import { CaseStudy } from "@/components/CaseStudy";
 import { useI18n } from "@/lib/i18n";
 
@@ -9,7 +10,7 @@ export const CaseStudies = () => {
       title: t("results.caseStudies.caseStudy1.title"),
       institution: t("results.caseStudies.caseStudy1.institution"),
       description: t("results.caseStudies.caseStudy1.description"),
-      image: "/modern-hospital-medical-center-exterior.jpg",
+      image: blazquezImage,
       image_alt: t("results.caseStudies.caseStudy1.alt"),
       name: t("results.caseStudies.caseStudy1.name"),
       role: t("results.caseStudies.caseStudy1.role"),
@@ -28,7 +29,7 @@ export const CaseStudies = () => {
       title: t("results.caseStudies.caseStudy2.title"),
       institution: t("results.caseStudies.caseStudy2.institution"),
       description: t("results.caseStudies.caseStudy2.description"),
-      image: "/private-medical-clinic-interior-modern.jpg",
+      image: seenImage,
       image_alt: t("results.caseStudies.caseStudy2.alt"),
       name: t("results.caseStudies.caseStudy2.name"),
       role: t("results.caseStudies.caseStudy2.role"),
@@ -47,7 +48,7 @@ export const CaseStudies = () => {
       title: t("results.caseStudies.caseStudy3.title"),
       institution: t("results.caseStudies.caseStudy3.institution"),
       description: t("results.caseStudies.caseStudy3.description"),
-      image: "/medical-research-laboratory-scientists.jpg",
+      image: sellosImage,
       image_alt: t("results.caseStudies.caseStudy3.alt"),
       name: t("results.caseStudies.caseStudy3.name"),
       role: t("results.caseStudies.caseStudy3.role"),

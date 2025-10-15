@@ -69,37 +69,38 @@ const results = {
   caseStudies: {
     title: "Casos de Éxito",
     caseStudy1: {
-      title: "Mejora del 45% en detección temprana",
-      institution: "Hospital Universitario La Paz",
+      title: "ULISSES será imprescible en el futuro de la ecografía",
+      institution: "Hospital Universitario Ramón y Cajal",
       description:
-        '"Desde la implementación de UlissesDS, hemos observado una mejora significativa en la detección temprana de anomalías. El sistema nos ha permitido reducir los tiempos de diagnóstico y aumentar la confianza en nuestras evaluaciones."',
-      name: "Dra. María González",
-      role: "Jefa de Radiología",
+        '"La integración de software como ULISSES en el flujo clínico de trabajo va a ser fundamental para cubrir el aumento exponencial de imágenes ecográficas."',
+      name: "Dr. Javier Blazquez Sánchez",
+      role: "Jefe de Radiología",
       alt: "Hospital Universitario",
       insight1: {
-        title: "Mejora en detección",
-        value: "45%",
+        title: "Aumento de pacientes anual",
+        value: "200%",
       },
       insight2: {
-        title: "Análisis mensuales",
+        title: "Ecografías mensuales",
         value: "3,500+",
       },
     },
     caseStudy2: {
-      title: "Reducción de 60% en tiempo de análisis",
-      institution: "Clínica Diagnóstica Barcelona",
+      title:
+        "Expertos en endocrinología creen que es necesario estandarizar la ecografía",
+      institution: "Sociedad Española de Endocrinología y Nutrición",
       description:
-        '"La integración con nuestro sistema PACS fue perfecta. Ahora procesamos el doble de pacientes sin comprometer la calidad. La IA nos ayuda a priorizar casos urgentes automáticomente."',
-      name: "Dr. Carlos Martínez",
-      role: "Director Médico",
-      alt: "Clínica Diagnóstica",
+        "El 100 % de los asistentes creen que es necesario estandarizar las ecografías para mejorar la precisión de los diagnósticos y evitar biopsias innecesarias.",
+      name: "Asistentes 66º Congreso SEEN 2025",
+      role: "Expertos en endocrinología y nutrición",
+      alt: "Congreso SEEN 2025",
       insight1: {
-        title: "Reducción de tiempo",
-        value: "60%",
+        title: "Necesidad de estandarización",
+        value: "100 %",
       },
       insight2: {
-        title: "Capacidad de pacientes",
-        value: "2x",
+        title: "Concordancia en la valoración de la ecogenicidad",
+        value: "51 %",
       },
     },
     caseStudy3: {
