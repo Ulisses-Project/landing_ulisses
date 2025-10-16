@@ -20,9 +20,6 @@ const es = {
   about,
   home,
   cta,
-  trusted: {
-    title: "Empresas que confian en nosotros",
-  },
 };
 
 export default es;

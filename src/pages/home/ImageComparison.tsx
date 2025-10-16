@@ -29,8 +29,8 @@ export const ImageComparison = () => {
             sliderPosition={comparison.sliderPosition}
             containerRef={comparison.setRef(i)}
             onMouseDown={() => comparison.handleMouseDown(i)}
-            isFirst={i === 0}
-            isLast={i === images.length - 1}
+            isFirst={i % 2 === 0}
+            isLast={i % 2 === 1}
           />
         ))}
       </div>

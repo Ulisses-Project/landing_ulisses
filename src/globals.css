@@ -210,3 +210,14 @@
 .animate-horizontal-scroll {
   animation: horizontal-scroll 40s linear infinite;
 }
+
+/* Prevenir layout shift en general */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Ajustes específicos para modales de Radix UI */
+html body[data-scroll-locked] {
+  --removed-body-scroll-bar-size: 0 !important;
+  margin-right: 0 !important;
+}

@@ -14,7 +14,7 @@ export function TrustedCompanies() {
     <section className="py-20 relative border-y border-border">
       <div className="container mx-auto px-4 max-w-6xl">
         <h3 className="text-center text-sm font-medium text-muted-foreground mb-12">
-          {t("trusted.title")}
+          {t("home.trusted")}
         </h3>
         <div className="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_48px,_black_calc(100%-48px),transparent_100%)]">
           <Marquee

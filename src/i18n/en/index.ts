@@ -20,9 +20,6 @@ const en = {
   about,
   home,
   cta,
-  trusted: {
-    title: "Companies that trust us",
-  },
 };
 
 export default en;

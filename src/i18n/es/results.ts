@@ -104,20 +104,21 @@ const results = {
       },
     },
     caseStudy3: {
-      title: "Avances en investigación clínica",
-      institution: "Instituto de Investigación Médica",
+      title: "Validación de ULISSES por parte de programas de aceleración",
+      institution:
+        "Programas de aceleración de la transferencia a la industria",
       description:
-        '"UlissesDS nos ha permitido analizar grandes volúmenes de datos para nuestros estudios clínicos. La consistencia y precisión del análisis automatizado ha acelerado significativamente nuestra investigación."',
-      name: "Dra. Ana Rodríguez",
-      role: "Directora de Investigación",
-      alt: "Centro de Investigación",
+        "Ganador del programa HealthStart de Madri+d en 2019 e inclusión en el portfolio de ITEMAS y The Collider en 2025.",
+      name: "",
+      role: "",
+      alt: "Programas de aceleración",
       insight1: {
-        title: "Imágenes analizadas",
-        value: "15K+",
+        title: "Ganador HealthStart de Madri+d",
+        value: "2019",
       },
       insight2: {
-        title: "Estudios publicados",
-        value: "8",
+        title: "Inclusión en ITEMAS y The Collider",
+        value: "2025",
       },
     },
   },

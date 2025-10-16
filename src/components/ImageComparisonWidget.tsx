@@ -32,7 +32,7 @@ const ImageComparisonWidget = ({
     <div
       ref={containerRef}
       className={`relative w-full lg:w-3/4 lg:mx-auto aspect-video overflow-hidden border-x border-primary/20 select-none cursor-ew-resize bg-black ${
-        !isFirst ? "border-b" : ""
+        !isFirst ? "border-b mb-10" : ""
       } ${!isLast ? "border-t" : ""} ${getRoundedClass()}`}
       onMouseDown={onMouseDown}
       onTouchStart={onMouseDown}

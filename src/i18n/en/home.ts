@@ -8,6 +8,7 @@ const home = {
     viewFeatures: "Explore how we transform diagnosis",
   },
   cta: "Be U-partner",
+  trusted: "Organizations that trust us",
   comparison: {
     title: "One nodule. Two scanners. Same clinical certainty.",
     subtitle:
@@ -56,6 +57,7 @@ const home = {
   stats: {
     variability: "Variability reduction in mean pixel intensity",
     rawData: "Difference over raw data",
+    dice: "Dice in segmentation",
     accuracy: "AUC in diagnosis",
   },
   features: {

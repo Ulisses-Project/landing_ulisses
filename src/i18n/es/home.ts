@@ -8,6 +8,7 @@ const home = {
     viewFeatures: "Explora cómo transformamos el diagnóstico",
   },
   cta: "Sé parte de Ulisses",
+  trusted: "Organizaciones que confian en nosotros",
   comparison: {
     title: "Un nódulo. Dos ecógrafos. Misma certeza.",
     subtitle:

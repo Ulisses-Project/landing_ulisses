@@ -1,17 +1,17 @@
-import afterImage1 from "/assets/image_comparison/1_after.png";
-import beforeImage1 from "/assets/image_comparison/1_before.png";
+import afterImage5 from "/assets/image_comparison/5_after.png";
+import beforeImage5 from "/assets/image_comparison/5_before.png";
 
-import afterImage2 from "/assets/image_comparison/2_after.png";
-import beforeImage2 from "/assets/image_comparison/2_before.png";
+import afterImage6 from "/assets/image_comparison/6_after.png";
+import beforeImage6 from "/assets/image_comparison/6_before.png";
 
 const images = [
   {
-    before: beforeImage1,
-    after: afterImage1,
+    before: beforeImage5,
+    after: afterImage5,
   },
   {
-    before: beforeImage2,
-    after: afterImage2,
+    before: beforeImage6,
+    after: afterImage6,
   },
 ];
 

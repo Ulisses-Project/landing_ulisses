@@ -5,34 +5,34 @@ const features = {
     "Descubre cómo UlissesDS revoluciona el análisis de imágenes ecográficas con tecnología de vanguardia",
   mainFeatures: {
     feature1: {
-      badge: "Análisis con IA",
-      title: "Motor de Inteligencia Artificial",
+      badge: "Análisis impulsado por IA",
+      title: "Diagnósticos precisos a un solo click",
       description:
-        "Nuestro sistema utiliza redes neuronales convolucionales profundas entrenadas con más de 2 millones de imágenes ecográficas validadas por especialistas.",
-      feature1: "Detección automática de anomalías y patrones",
-      feature2: "Clasificación de estructuras anatómicas",
-      feature3: "Mediciones automáticas precisas",
+        "ULISSES combina algoritmos con inteligencia artificial avanzada para ofrecer análisis ecográficos de alta precisión y eficiencia diagnóstica.",
+      feature1: "Detección automática de lesiones",
+      feature2: "Extracción de características objetivas",
+      feature3: "Modelos entrenados con correlación histopatológica",
       alt: "Análisis con IA",
     },
     feature2: {
-      alt: "Procesamiento de imágenes",
-      badge: "Procesamiento",
-      title: "Procesamiento Avanzado de Imágenes",
+      badge: "Resultados Interpretables",
+      title: "Explicabilidad y trazabilidad para decisiones clínicas seguras",
       description:
-        "Mejora automática de la calidad de imagen y optimización para análisis más precisos.",
-      feature1: "Reducción de ruido y artefactos",
-      feature2: "Mejora de contraste adaptativa",
-      feature3: "Normalización automática",
+        "ULISSES ofrece un conjunto de herramientas para que cada resultado pueda ser comprendido y verificado, fortaleciendo la confianza del especialista.",
+      feature1: "Comparación instantánea con casos similares",
+      feature2: "Visualización de regiones de interés de la lesión",
+      feature3: "Auditoría completa de cada predicción",
+      alt: "Comparación de imágenes similares",
     },
     feature3: {
-      badge: "Informes",
-      title: "Informes Detallados y Visualización",
+      badge: "Informes estructurados",
+      title: "Informes completos listos para integración clínica",
       description:
-        "Genera informes completos con visualizaciones interactivas y métricas cuantitativas.",
-      feature1: "Informes personalizables en PDF",
-      feature2: "Gráficos y comparativas temporales",
-      feature3: "Anotaciones y marcadores",
-      alt: "Dashboard de Informes",
+        "ULISSES genera informes completos, editables e integrables con sistemas PACS/RIS, acelerando el flujo de trabajo radiológico y reduciendo errores.",
+      feature1: "Permite copiar el informe al PACS/RIS",
+      feature2: "Pictograma anatómico con la localización de la lesión",
+      feature3: "Edición flexible de parámetros predichos",
+      alt: "Informe estructurado",
     },
   },
   additionalFeatures: {
@@ -67,7 +67,6 @@ const features = {
       description: "Seguimiento temporal de pacientes y evolución de casos",
     },
   },
-  
 };
 
 export default features;
