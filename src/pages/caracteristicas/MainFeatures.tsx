@@ -2,14 +2,7 @@
 import { Feature } from "@/components/Feature";
 import { useI18n } from "@/lib/i18n";
 import { useMemo } from "react";
-import {
-  Brain,
-  FileSearch,
-  BarChart3,
-  Cpu,
-  SearchCheck,
-  FileText,
-} from "lucide-react";
+import { Cpu, SearchCheck, FileText } from "lucide-react";
 import {
   appReportImage,
   appSimilarityImage,
