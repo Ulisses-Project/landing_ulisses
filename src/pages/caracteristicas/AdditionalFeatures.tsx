@@ -4,12 +4,16 @@ import {
 } from "@/components/AdditionalFeature";
 import { useI18n } from "@/lib/i18n";
 import {
-  Clock,
-  Database,
-  Share2,
-  Sparkles,
-  Workflow,
-  Lock,
+  Stethoscope,
+  RefreshCcw,
+  Server,
+  ShieldCheck,
+  LineChart,
+  Equal,
+  SlidersHorizontal,
+  SearchCheck,
+  ScanSearch,
+  Network,
 } from "lucide-react";
 
 export const AdditionalFeatures = () => {
@@ -17,32 +21,32 @@ export const AdditionalFeatures = () => {
 
   const additionalFeatures: additionalFeature[] = [
     {
-      badge: Database,
+      badge: SlidersHorizontal,
       title: t("features.additionalFeatures.feature1.title"),
       description: t("features.additionalFeatures.feature1.description"),
     },
     {
-      badge: Share2,
+      badge: ScanSearch,
       title: t("features.additionalFeatures.feature2.title"),
       description: t("features.additionalFeatures.feature2.description"),
     },
     {
-      badge: Lock,
+      badge: ShieldCheck,
       title: t("features.additionalFeatures.feature3.title"),
       description: t("features.additionalFeatures.feature3.description"),
     },
     {
-      badge: Workflow,
+      badge: Network,
       title: t("features.additionalFeatures.feature4.title"),
       description: t("features.additionalFeatures.feature4.description"),
     },
     {
-      badge: Sparkles,
+      badge: RefreshCcw,
       title: t("features.additionalFeatures.feature5.title"),
       description: t("features.additionalFeatures.feature5.description"),
     },
     {
-      badge: Clock,
+      badge: Stethoscope,
       title: t("features.additionalFeatures.feature6.title"),
       description: t("features.additionalFeatures.feature6.description"),
     },

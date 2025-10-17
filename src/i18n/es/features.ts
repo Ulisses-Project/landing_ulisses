@@ -2,11 +2,11 @@ const features = {
   badge: "Plataforma completa de análisis",
   title: "Características de la Plataforma",
   subtitle:
-    "Descubre cómo UlissesDS revoluciona el análisis de imágenes ecográficas con tecnología de vanguardia",
+    "Descubre cómo ULISSES revoluciona el análisis de imágenes ecográficas con tecnología de vanguardia",
   mainFeatures: {
     feature1: {
       badge: "Análisis impulsado por IA",
-      title: "Diagnósticos precisos a un solo click",
+      title: "Diagnósticos precisos a un solo clic",
       description:
         "ULISSES combina algoritmos con inteligencia artificial avanzada para ofrecer análisis ecográficos de alta precisión y eficiencia diagnóstica.",
       feature1: "Detección automática de lesiones",
@@ -37,34 +37,36 @@ const features = {
   },
   additionalFeatures: {
     title: "Más Características",
-    subtitle:
-      "Funcionalidades adicionales diseñadas para optimizar tu flujo de trabajo",
+    subtitle: "Funcionalidades diseñadas para optimizar tu flujo de trabajo",
     feature1: {
-      title: "Base de Datos Centralizada",
+      title: "Estandarización de la imagen",
       description:
-        "Almacenamiento seguro y acceso rápido a todo tu historial de análisis",
+        "ULISSES armoniza la ecografía entre equipos y operadores para convertir la variabilidad técnica en decisiones comparables.",
     },
     feature2: {
-      title: "Colaboración en Tiempo Real",
+      title: "Análisis reproducible",
       description:
-        "Comparte casos y consulta con especialistas instantáneamente",
+        "Análisis digital de la imagen que permite la extracción de características cuantitativas para asegurar repetibilidad diagnóstica.",
     },
     feature3: {
-      title: "Seguridad Certificada",
+      title: "Seguridad y Privacidad",
       description:
-        "Cumplimiento total con normativas HIPAA, GDPR y regulaciones locales",
+        "Cumplimiento total con normativas HIPAA, GDPR y regulaciones locales.",
     },
     feature4: {
-      title: "Integración PACS/RIS",
-      description: "Conexión directa con tus sistemas hospitalarios existentes",
+      title: "Integración con PACS",
+      description:
+        "Adaptación directa con tu flujo de trabajo habitual mediante la interoperabilidad de servicios DICOM.",
     },
     feature5: {
-      title: "Actualizaciones Automáticas",
-      description: "Mejoras continuas del modelo sin interrumpir tu trabajo",
+      title: "Actualizaciones transparentes",
+      description:
+        "Mejoras continuas de la tecnología, manteniendo la disponibilidad para no frenar la actividad ni la atención al paciente.",
     },
     feature6: {
-      title: "Historial Completo",
-      description: "Seguimiento temporal de pacientes y evolución de casos",
+      title: "Centrado en el clínico",
+      description:
+        "Interfaz sencilla y directa para hacer más en menos tiempo y con menos clics.",
     },
   },
 };

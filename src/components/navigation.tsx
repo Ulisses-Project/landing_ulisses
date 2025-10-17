@@ -7,14 +7,11 @@ import { LanguageToggle } from "@/components/language-toggle";
 
 import { ContactModal } from "@/components/contact-modal";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import { useTheme } from "../context/theme-provider";
 import { useI18n } from "@/lib/i18n";
 import { ulissesLogo, ulissesLogoDark } from "@/assets/logos";
 
 export function Navigation() {
-  const location = useLocation();
-  const pathname = location.pathname;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactModalOpen, setContactModalOpen] = useState(false);
   const { t } = useI18n();
@@ -67,7 +64,7 @@ export function Navigation() {
               <ThemeToggle />
               <Button
                 size="sm"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 glow-accent"
+                className="w-38 bg-primary text-primary-foreground hover:bg-primary/90 glow-accent"
                 onClick={() => setContactModalOpen(true)}
               >
                 {t("nav.cta")}

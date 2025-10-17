@@ -22,10 +22,10 @@ const ImageComparisonWidget = ({
   isLast = false,
 }: ImageComparisonProps) => {
   const getRoundedClass = () => {
-    if (isFirst && isLast) return "rounded-xl"; // Solo un elemento
-    if (isFirst) return "rounded-t-xl"; // Primer elemento: solo redondear arriba
-    if (isLast) return "rounded-b-xl"; // Último elemento: solo redondear abajo
-    return ""; // Elementos del medio: sin redondeo
+    if (isFirst && isLast) return "rounded-xl";
+    if (isFirst) return "rounded-t-xl";
+    if (isLast) return "rounded-b-xl";
+    return "";
   };
 
   return (

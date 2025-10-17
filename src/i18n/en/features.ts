@@ -2,75 +2,72 @@ const features = {
   badge: "Full Analysis Platform",
   title: "Platform Features",
   subtitle:
-    "Discover how UlissesDS revolutionizes the analysis of ultrasound images with cutting-edge AI technology",
+    "Discover how ULISSES revolutionizes the analysis of ultrasound images with cutting-edge AI technology",
   mainFeatures: {
     feature1: {
-      badge: "AI Analysis",
-      title: "Intelligent Analysis",
+      badge: "AI-Powered Analysis",
+      title: "Accurate Diagnoses at a Single Click",
       description:
-        "Our system uses deep convolutional neural networks trained with over 2 million ultrasound images validated by experts.",
-      feature1: "Automatic Detection of Anomalies and Patterns",
-      feature2: "Structure Classification",
-      feature3: "Precise Automatic Measurements",
-      alt: "AI Analysis",
+        "ULISSES combines cutting-edge algorithms with advanced artificial intelligence to deliver high-precision ultrasound analysis and diagnostic efficiency.",
+      feature1: "Automatic lesion detection",
+      feature2: "Objective features extraction",
+      feature3: "Models trained with histopathological correlation",
+      alt: "Analysis with AI",
     },
     feature2: {
-      alt: "Image Processing",
-      badge: "Image Processing",
-      title: "Advanced Image Processing",
+      badge: "Interpretable Results",
+      title: "Explainability and Traceability for Confident Clinical Decisions",
       description:
-        "Automatic image quality enhancement and optimization for more accurate analysis.",
-      feature1: "Noise and Artifact Reduction",
-      feature2: "Adaptive Contrast Enhancement",
-      feature3: "Automatic Normalization",
+        "ULISSES provides a set of tools ensuring that every result can be understood and verified, strengthening specialist trust.",
+      feature1: "Instant comparison with similar cases",
+      feature2: "Visualization of regions of interest within the lesion",
+      feature3: "Complete audit of each prediction",
+      alt: "Similar image comparison",
     },
     feature3: {
-      badge: "Reports",
-      title: "Detailed Reports and Visualization",
+      badge: "Structured Reports",
+      title: "Comprehensive Reports Ready for Clinical Integration",
       description:
-        "Generate comprehensive reports with interactive visualizations and quantitative metrics.",
-      feature1: "Customizable PDF Reports",
-      feature2: "Charts and Temporal Comparisons",
-      feature3: "Annotations and Markers",
-      alt: "Dashboard of Reports",
+        "ULISSES generates complete, editable reports that can be integrated with PACS/RIS systems, accelerating the radiology workflow and reducing errors.",
+      feature1: "Copy report directly to PACS/RIS",
+      feature2: "Anatomic pictogram showing lesion location",
+      feature3: "Flexible editing of predicted parameters",
+      alt: "Structured report",
     },
   },
   additionalFeatures: {
-    title: "Additional Features",
-    subtitle: "Designed to optimize your workflow",
+    title: "More Features",
+    subtitle: "Functionalities Designed to Optimize Your Workflow",
     feature1: {
-      badge: "Database",
-      title: "Advanced Database",
-      description: "Store and manage ultrasound images efficiently.",
+      title: "Image Standardization",
+      description:
+        "ULISSES harmonizes images between devices and operators to turn technical variability into comparable decisions.",
     },
     feature2: {
-      badge: "Share",
-      title: "Share Reports",
-      description: "Share cases and consult with experts in real-time.",
+      title: "Reproducible Analysis",
+      description:
+        "Digital image analysis that enables extraction of quantitative features to ensure diagnostic repeatability.",
     },
     feature3: {
-      badge: "Security",
-      title: "Total Security",
-      description: "HIPAA and GDPR compliance with end-to-end encryption.",
+      title: "Security and Privacy",
+      description: "Full compliance with HIPAA, GDPR, and local regulations.",
     },
     feature4: {
-      badge: "Integration",
-      title: "PACS/RIS Integration",
-      description: "Direct connection with your existing hospital systems.",
+      title: "PACS Integration",
+      description:
+        "Direct adaptation to your routine workflow through DICOM service interoperability.",
     },
     feature5: {
-      badge: "Updates",
-      title: "Automatic Updates",
+      title: "Transparent Updates",
       description:
-        "Continuous model improvements without interrupting your work.",
+        "Continuous technology improvements, always available without disrupting activity or patient care.",
     },
     feature6: {
-      badge: "History",
-      title: "Complete History",
-      description: "Temporal tracking of patients and case evolution.",
+      title: "Clinician First",
+      description:
+        "Simple and straightforward interface to accomplish more in less time with fewer clicks.",
     },
   },
-
 };
 
 export default features;
