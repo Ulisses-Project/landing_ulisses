@@ -48,10 +48,10 @@ export function Navigation() {
                   key={link.href}
                   to={link.href}
                   className={cn(
-                    "text-md font-medium transition-colors hover:text-primary relative",
-                    pathname === link.href
-                      ? "text-primary"
-                      : "text-muted-foreground"
+                    "text-md font-medium transition-colors hover:text-primary relative"
+                    // pathname === link.href
+                    //   ? "text-primary"
+                    //   : "text-muted-foreground"
                   )}
                 >
                   {link.label}

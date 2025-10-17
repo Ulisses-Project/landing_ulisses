@@ -7,7 +7,7 @@ import { ContactModal } from "@/components/contact-modal";
 import { CTA } from "@/components/CTA";
 import { Roadmap } from "./Roadmap";
 import { ImageComparison } from "./ImageComparison";
-import { HeroHeading } from "./HeroHeading";
+import { HomeHero } from "./HomeHero";
 import { HighlightedFeatures } from "./HighligthedFeatures";
 import { Features } from "./Features";
 
@@ -23,7 +23,7 @@ const HomePage = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <HeroHeading
+      <HomeHero
         onContactClick={() => setContactModalOpen(true)}
         onViewFeaturesClick={scrollToFeatures}
       />

@@ -8,7 +8,7 @@ interface HeroHeadingProps {
   onViewFeaturesClick: () => void;
 }
 
-export const HeroHeading = ({
+export const HomeHero = ({
   onContactClick,
   onViewFeaturesClick,
 }: HeroHeadingProps) => {
