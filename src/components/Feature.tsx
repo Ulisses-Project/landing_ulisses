@@ -274,17 +274,22 @@ export const Feature = memo((props: FeatureProps) => {
 
   return (
     <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
-      {isReversed ? (
-        <>
-          {mediaContent}
-          {textContent}
-        </>
-      ) : (
-        <>
-          {textContent}
-          {mediaContent}
-        </>
-      )}
+      {/* En móvil: imagen primero (order-first), texto segundo (order-last) */}
+      {/* En desktop (lg): respeta isReversed */}
+      <div
+        className={`order-first ${
+          isReversed ? "lg:order-first" : "lg:order-last"
+        }`}
+      >
+        {mediaContent}
+      </div>
+      <div
+        className={`order-last ${
+          isReversed ? "lg:order-last" : "lg:order-first"
+        }`}
+      >
+        {textContent}
+      </div>
     </div>
   );
 });
