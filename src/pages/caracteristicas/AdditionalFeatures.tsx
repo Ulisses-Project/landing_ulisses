@@ -6,12 +6,8 @@ import { useI18n } from "@/lib/i18n";
 import {
   Stethoscope,
   RefreshCcw,
-  Server,
   ShieldCheck,
-  LineChart,
-  Equal,
   SlidersHorizontal,
-  SearchCheck,
   ScanSearch,
   Network,
 } from "lucide-react";
