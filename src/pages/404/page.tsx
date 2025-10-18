@@ -1,9 +1,9 @@
-import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { AlertCircle, Home, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
+import { Navigation } from "@/components/Navigation";
 
 export default function NotFoundPage() {
   const { t } = useI18n();

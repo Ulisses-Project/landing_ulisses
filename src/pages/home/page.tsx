@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/navigation";
+import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { TrustedCompanies } from "@/pages/home/TrustedCompanies";
 import { useState } from "react";
@@ -17,6 +17,7 @@ const scrollToFeatures = () => {
     element.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
+
 const HomePage = () => {
   const [contactModalOpen, setContactModalOpen] = useState(false);
   return (

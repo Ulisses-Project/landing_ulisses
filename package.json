@@ -20,6 +20,7 @@
     "geist": "^1.5.1",
     "i18next": "^25.5.3",
     "lucide-react": "^0.544.0",
+    "papaparse": "^5.5.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-fast-marquee": "^1.6.5",

@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/navigation";
+import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Construction, Mail, ArrowRight, Rocket } from "lucide-react";

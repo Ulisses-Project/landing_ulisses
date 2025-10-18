@@ -27,8 +27,8 @@ export default function AppRouter() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<UnderConstructionPage />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/under-construction" element={<UnderConstructionPage />} />
         <Route path="/about" element={<NosotrosPage />} />
         <Route path="/features" element={<CaracteristicasPage />} />
         <Route path="/results" element={<ResultadosPage />} />

@@ -22,48 +22,18 @@ const results = {
     },
   },
   charts: {
-    title: "Análisis de Datos en Tiempo Real",
+    title: "Más comparables, mejores decisiones",
     subtitle:
-      "Visualización de métricas clave que demuestran el impacto de UlissesDS en instituciones médicas",
-    traditional: "Método Tradicional",
-    january: "Ene",
-    february: "Feb",
-    march: "Mar",
-    april: "Abr",
-    may: "May",
-    june: "Jun",
-    july: "Jul",
-    august: "Ago",
-    september: "Sep",
-    october: "Oct",
-    november: "Nov",
-    december: "Dic",
-    precision: {
-      title: "Evolución de Precisión Diagnóstica",
-      subtitle: "Comparación mensual entre UlissesDS y método tradicional",
+      "Observa cómo ULISSES reduce la variabilidad intra e intersistema, reduciendo las diferencias entre distintos equipos.",
+    intensity: {
+      xLabel: "Rango dinámico",
+      yLabel: "Intensidad media de píxel",
     },
-    timeAnalysis: {
-      title: "Tiempo de Análisis por Categoría",
-      subtitle: "Comparación de tiempos promedio en minutos",
-      category1: "Análisis Básico",
-      category2: "Análisis Complejo",
-      category3: "Revisión",
-      category4: "Informe",
+    rawIntensity: {
+      title: "Imágenes sin preprocesar",
     },
-    volumen: {
-      title: "Volumen de Análisis",
-      subtitle: "Crecimiento en número de análisis procesados",
-      name: "Análisis",
-    },
-    rendimiento: {
-      title: "Métricas de Rendimiento del Sistema",
-      subtitle: "Evaluación integral de capacidades de UlissesDS",
-      name: "Rendimiento",
-      metric1: "Precisión diagnóstica",
-      metric2: "Velocidad",
-      metric3: "Consistencia",
-      metric4: "Detección",
-      metric5: "Confiabilidad",
+    compressedIntensity: {
+      title: "Imágenes preprocesadas con ULISSES",
     },
   },
   caseStudies: {

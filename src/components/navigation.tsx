@@ -11,16 +11,18 @@ import { useTheme } from "../context/theme-provider";
 import { useI18n } from "@/lib/i18n";
 import { ulissesLogo, ulissesLogoDark } from "@/assets/logos";
 
-export function Navigation() {
+export const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactModalOpen, setContactModalOpen] = useState(false);
   const { t } = useI18n();
 
+  const pathname = window.location.pathname;
+
   const links = [
     { href: "/", label: t("nav.home") },
-    { href: "/", label: t("nav.features") },
-    { href: "/", label: t("nav.results") },
-    { href: "/", label: t("nav.about") },
+    { href: "/features", label: t("nav.features") },
+    { href: "/results", label: t("nav.results") },
+    { href: "/about", label: t("nav.about") },
   ];
 
   const { theme } = useTheme();
@@ -39,27 +41,28 @@ export function Navigation() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-8">
               {links.map((link) => (
                 <Link
                   key={link.href}
-                  to={link.href}
+                  // to={link.href}
+                  to={link.href === "/" ? "/" : "/under-construction"}
                   className={cn(
-                    "text-md font-medium transition-colors hover:text-primary relative"
-                    // pathname === link.href
-                    //   ? "text-primary"
-                    //   : "text-muted-foreground"
+                    "text-md font-medium transition-colors hover:text-primary relative",
+                    pathname === link.href
+                      ? "text-primary"
+                      : "text-muted-foreground"
                   )}
                 >
                   {link.label}
-                  {/* {pathname === link.href && (
+                  {pathname === link.href && (
                     <span className="absolute -bottom-6 left-0 right-0 h-0.5 bg-primary"></span>
-                  )} */}
+                  )}
                 </Link>
               ))}
             </div>
 
-            <div className="hidden md:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-2">
               <LanguageToggle />
               <ThemeToggle />
               <Button
@@ -72,7 +75,7 @@ export function Navigation() {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-2">
+            <div className="lg:hidden flex items-center gap-2">
               <LanguageToggle />
               <ThemeToggle />
               <button
@@ -91,18 +94,19 @@ export function Navigation() {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-border">
+            <div className="lg:hidden py-4 border-t border-border">
               <div className="flex flex-col gap-4">
                 {links.map((link) => (
                   <Link
                     key={link.href}
-                    to={link.href}
+                    // to={link.href}
+                    to={link.href === "/" ? "/" : "/under-construction"}
                     className={cn(
                       "text-sm font-medium transition-colors hover:text-primary px-2 py-1",
-                      "text-primary"
-                      // pathname === link.href
-                      //   ? "text-primary"
-                      //   : "text-muted-foreground"
+                      "text-primary",
+                      pathname === link.href
+                        ? "text-primary"
+                        : "text-muted-foreground"
                     )}
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -133,4 +137,4 @@ export function Navigation() {
       />
     </>
   );
-}
+};

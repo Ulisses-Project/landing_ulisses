@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/navigation";
+import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";

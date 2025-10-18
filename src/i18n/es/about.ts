@@ -73,7 +73,7 @@ const about = {
       alt: "CMO",
       role: "CMO & Co-fundador",
       description:
-        "Endocrino con 18 años de experiencia. PhD en Endocrinología y experto mundial en nódulos tiroideos y cáncer de tiroides.",
+        "Endocrino con 18 años de experiencia. PhD en Endocrinología y experto mundial en nódulos y cáncer de tiroides.",
     },
     paula: {
       alt: "COO",

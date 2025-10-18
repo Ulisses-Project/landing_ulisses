@@ -1,8 +1,20 @@
-import PrecisionChart from "@/components/charts/PrecisionChart";
-import RendimientoChart from "@/components/charts/RendimientoChart";
-import TiempoAnalisisChart from "@/components/charts/TiempoAnalisis";
-import VolumenChart from "@/components/charts/VolumenChart";
 import { useI18n } from "@/lib/i18n";
+
+import {
+  compressedCanonIntensity,
+  compressedS8Intensity,
+  compressedE10Intensity,
+  compressedEpiq5gIntensity,
+} from "@/data/compressed_pixel_intensity.data";
+
+import {
+  canonIntensity,
+  e10Intensity,
+  s8Intensity,
+  epiq5gIntensity,
+} from "@/data/raw_pixel_instensity.data";
+
+import IntensityChart from "@/components/charts/IntensityChart";
 
 export const ResultsCharts = () => {
   const { t } = useI18n();
@@ -16,13 +28,20 @@ export const ResultsCharts = () => {
       </p>
 
       <div className="grid lg:grid-cols-2 gap-8 mb-8">
-        <PrecisionChart />
-        <TiempoAnalisisChart />
-      </div>
-
-      <div className="grid lg:grid-cols-2 gap-8">
-        <VolumenChart />
-        <RendimientoChart />
+        <IntensityChart
+          title={t("results.charts.rawIntensity.title")}
+          canonIntensity={canonIntensity}
+          e10Intensity={e10Intensity}
+          s8Intensity={s8Intensity}
+          epiq5gIntensity={epiq5gIntensity}
+        />
+        <IntensityChart
+          title={t("results.charts.compressedIntensity.title")}
+          canonIntensity={compressedCanonIntensity}
+          e10Intensity={compressedE10Intensity}
+          s8Intensity={compressedS8Intensity}
+          epiq5gIntensity={compressedEpiq5gIntensity}
+        />
       </div>
     </div>
   );

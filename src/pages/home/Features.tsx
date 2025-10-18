@@ -80,8 +80,8 @@ export const Features = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link to="/features">
-            <Button size="lg" variant="outline">
+          <Link to="/">
+            <Button size="lg" variant="outline" disabled>
               {t("home.features.viewAll")}
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
